@@ -1,0 +1,17 @@
+[gd_resource type="StandardMaterial3D" format=3]
+
+[ext_resource type="Texture2D" path="res://room_kit/quality/v20/textures/rubber_albedo.png" id="1_05fvb"]
+[ext_resource type="Texture2D" path="res://room_kit/quality/v20/textures/rubber_normal.png" id="2_i4huu"]
+[ext_resource type="Texture2D" path="res://room_kit/quality/v20/textures/rubber_roughness.png" id="3_4wo6s"]
+
+[resource]
+resource_name = "V20 Ultra Stationery ceramic foot"
+albedo_color = Color(0.7083697, 0.6342527, 0.5370987, 1)
+albedo_texture = ExtResource("1_05fvb")
+metallic_specular = 0.12
+roughness_texture = ExtResource("3_4wo6s")
+normal_enabled = true
+normal_scale = 0.3
+normal_texture = ExtResource("2_i4huu")
+texture_filter = 5
+metadata/quality_profile = "ultra"

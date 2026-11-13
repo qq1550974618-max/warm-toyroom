@@ -1,0 +1,23 @@
+[gd_resource type="StandardMaterial3D" format=3]
+
+[ext_resource type="Texture2D" path="res://room_kit/textures/v11/book_canvas_albedo.png" id="1_fvnb5"]
+[ext_resource type="Texture2D" path="res://room_kit/textures/v11/book_canvas_normal.png" id="2_0essw"]
+[ext_resource type="Texture2D" path="res://room_kit/textures/v11/book_canvas_roughness.png" id="3_sqrq6"]
+
+[resource]
+resource_name = "V21 V7 coated book floor muted_oxblood"
+albedo_color = Color(0.60124344, 0.19966345, 0.14733289, 1)
+albedo_texture = ExtResource("1_fvnb5")
+metallic_specular = 0.43
+roughness = 0.43
+clearcoat_enabled = true
+roughness_texture = ExtResource("3_sqrq6")
+normal_enabled = true
+normal_scale = 0.14
+normal_texture = ExtResource("2_0essw")
+clearcoat = 0.1
+clearcoat_roughness = 0.32
+uv1_scale = Vector3(2.5, 2.5, 2.5)
+texture_filter = 5
+
+metadata/finish_reference = "V7 lacquer; current full resolution textures preserved"

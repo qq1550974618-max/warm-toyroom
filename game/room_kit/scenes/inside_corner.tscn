@@ -1,0 +1,20 @@
+[gd_scene format=3]
+
+[ext_resource type="ArrayMesh" path="res://room_kit/resources/inside_corner_InsideCorner_Model_MK_Sage_Painted_Wood_007.res" id="1_n8fiq"]
+[ext_resource type="Material" path="res://room_kit/materials/mk_sage_painted_wood.tres" id="2_3en6n"]
+[ext_resource type="Shape3D" path="res://room_kit/resources/inside_corner_InsideCorner_Model_MK_Sage_Painted_Wood_007_MK_Sage_Painted_Wood_007_col_CollisionShape3D.res" id="3_mympc"]
+
+[node name="InsideCorner" type="Node3D" unique_id=1763047715]
+
+[node name="Model" type="Node3D" parent="." unique_id=1106024311]
+
+[node name="MK_Sage_Painted_Wood_007" type="MeshInstance3D" parent="Model" unique_id=1546634096]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.04, 0.035)
+mesh = ExtResource("1_n8fiq")
+surface_material_override/0 = ExtResource("2_3en6n")
+metadata/kit_collision_managed = true
+
+[node name="MK_Sage_Painted_Wood_007_col" type="StaticBody3D" parent="Model/MK_Sage_Painted_Wood_007" unique_id=1151230583]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Model/MK_Sage_Painted_Wood_007/MK_Sage_Painted_Wood_007_col" unique_id=719599363]
+shape = ExtResource("3_mympc")

@@ -1,0 +1,17 @@
+[gd_resource type="StandardMaterial3D" format=3]
+
+[ext_resource type="Texture2D" path="res://room_kit/quality/v20/textures/pencil_lacquer_albedo.png" id="1_2itoe"]
+[ext_resource type="Texture2D" path="res://room_kit/quality/v20/textures/pencil_lacquer_normal.png" id="2_on615"]
+[ext_resource type="Texture2D" path="res://room_kit/quality/v20/textures/pencil_lacquer_roughness.png" id="3_ubwbh"]
+
+[resource]
+resource_name = "V20 Ultra Stationery ivory lacquer"
+albedo_color = Color(0.8756056, 0.8378605, 0.735357, 1)
+albedo_texture = ExtResource("1_2itoe")
+metallic_specular = 0.28
+roughness_texture = ExtResource("3_ubwbh")
+normal_enabled = true
+normal_scale = 0.28
+normal_texture = ExtResource("2_on615")
+texture_filter = 5
+metadata/quality_profile = "ultra"

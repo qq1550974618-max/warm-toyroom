@@ -1,0 +1,7 @@
+[gd_resource type="StandardMaterial3D" format=3]
+
+[resource]
+resource_name = "Rabbit brown button eyes"
+albedo_color = Color(0.20598418, 0.16007765, 0.12315822, 1)
+roughness = 0.27
+texture_filter = 5

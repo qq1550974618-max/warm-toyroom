@@ -1,0 +1,16 @@
+[gd_resource type="ShaderMaterial" format=3]
+
+[ext_resource type="Shader" path="res://flag_cotton.gdshader" id="1_yskef"]
+[ext_resource type="Texture2D" path="res://room_kit/quality/v20/textures/flag_cotton_albedo.png" id="2_inso8"]
+[ext_resource type="Texture2D" path="res://room_kit/quality/v20/textures/flag_cotton_normal.png" id="3_thkpq"]
+[ext_resource type="Texture2D" path="res://room_kit/quality/v20/textures/flag_cotton_roughness.png" id="4_g8pqf"]
+
+[resource]
+resource_name = "V20 Ultra V16 stitched flag Woven faded indigo"
+render_priority = 0
+shader = ExtResource("1_yskef")
+shader_parameter/tint = Color(0.2827793, 0.34064347, 0.43662706, 1)
+shader_parameter/cloth_albedo = ExtResource("2_inso8")
+shader_parameter/cloth_normal = ExtResource("3_thkpq")
+shader_parameter/cloth_roughness = ExtResource("4_g8pqf")
+metadata/quality_profile = "ultra"

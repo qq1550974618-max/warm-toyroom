@@ -1,0 +1,27 @@
+[gd_resource type="StandardMaterial3D" format=3]
+
+[ext_resource type="Texture2D" path="res://room_kit/quality/v20/textures/flag_cotton_albedo.png" id="1_0v4qq"]
+[ext_resource type="Texture2D" path="res://room_kit/quality/v20/textures/flag_cotton_normal.png" id="2_0ufcb"]
+[ext_resource type="Texture2D" path="res://room_kit/quality/v20/textures/flag_cotton_roughness.png" id="3_2cjx7"]
+
+[resource]
+resource_name = "V21 V7 coated book desk muted_oxblood"
+albedo_color = Color(0.60124344, 0.19966345, 0.14733289, 1)
+albedo_texture = ExtResource("1_0v4qq")
+metallic_specular = 0.43
+roughness = 0.43
+clearcoat_enabled = true
+roughness_texture = ExtResource("3_2cjx7")
+normal_enabled = true
+normal_scale = 0.48
+normal_texture = ExtResource("2_0ufcb")
+clearcoat = 0.1
+clearcoat_roughness = 0.32
+uv1_scale = Vector3(2.2, 2.2, 2.2)
+uv1_triplanar = true
+uv1_world_triplanar = true
+texture_filter = 5
+metadata/v18_surface_family = "bookcloth"
+metadata/quality_profile = "ultra"
+
+metadata/finish_reference = "V7 lacquer; current full resolution textures preserved"

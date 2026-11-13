@@ -1,0 +1,74 @@
+[gd_scene format=3]
+
+[ext_resource type="Material" path="res://room_kit/materials/v16_flag_Room_Soft_cotton_ivory_009.tres" id="1_gdxru"]
+[ext_resource type="ArrayMesh" path="res://room_kit/resources/v16_surface_flags_06.res" id="2_2squn"]
+[ext_resource type="Material" path="res://room_kit/materials/legacy_soft_cotton_ivory.tres" id="3_x4mfv"]
+[ext_resource type="Shape3D" path="res://room_kit/resources/bunting_Bunting_Model_Room_Soft_cotton_ivory_009_Room_Soft_cotton_ivory_009_col_CollisionShape3D.res" id="4_1r5ap"]
+[ext_resource type="Material" path="res://room_kit/materials/v16_flag_Room_Woven_dusty_teal_007.tres" id="5_l8kj1"]
+[ext_resource type="ArrayMesh" path="res://room_kit/resources/v16_surface_flags_07.res" id="6_c8lih"]
+[ext_resource type="Material" path="res://room_kit/materials/legacy_woven_dusty_teal.tres" id="7_hgd7l"]
+[ext_resource type="Shape3D" path="res://room_kit/resources/bunting_Bunting_Model_Room_Woven_dusty_teal_007_Room_Woven_dusty_teal_007_col_CollisionShape3D.res" id="8_ci43b"]
+[ext_resource type="Material" path="res://room_kit/materials/v16_flag_Room_Woven_faded_indigo_003.tres" id="9_3h0jq"]
+[ext_resource type="ArrayMesh" path="res://room_kit/resources/v16_surface_flags_08.res" id="10_e7ge0"]
+[ext_resource type="Material" path="res://room_kit/materials/legacy_woven_faded_indigo.tres" id="11_jl325"]
+[ext_resource type="Shape3D" path="res://room_kit/resources/bunting_Bunting_Model_Room_Woven_faded_indigo_003_Room_Woven_faded_indigo_003_col_CollisionShape3D.res" id="12_dwky2"]
+[ext_resource type="Material" path="res://room_kit/materials/v16_flag_Room_Woven_russet_004.tres" id="13_u3c2u"]
+[ext_resource type="ArrayMesh" path="res://room_kit/resources/v16_surface_flags_09.res" id="14_w84p5"]
+[ext_resource type="Material" path="res://room_kit/materials/legacy_woven_russet.tres" id="15_0qt8n"]
+[ext_resource type="Shape3D" path="res://room_kit/resources/bunting_Bunting_Model_Room_Woven_russet_004_Room_Woven_russet_004_col_CollisionShape3D.res" id="16_c10lf"]
+[ext_resource type="Material" path="res://room_kit/materials/v16_cotton_cord.tres" id="17_yy5b5"]
+[ext_resource type="ArrayMesh" path="res://room_kit/resources/v16_surface_cord_10.res" id="18_am66i"]
+
+[node name="Bunting" type="Node3D" unique_id=561198232]
+
+[node name="Model" type="Node3D" parent="." unique_id=1296758623]
+
+[node name="Room Soft cotton ivory_009" type="MeshInstance3D" parent="Model" unique_id=1554744985]
+material_override = ExtResource("1_gdxru")
+mesh = ExtResource("2_2squn")
+surface_material_override/0 = ExtResource("3_x4mfv")
+metadata/kit_collision_managed = true
+
+[node name="Room Soft cotton ivory_009_col" type="StaticBody3D" parent="Model/Room Soft cotton ivory_009" unique_id=1863815915]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Model/Room Soft cotton ivory_009/Room Soft cotton ivory_009_col" unique_id=846315920]
+shape = ExtResource("4_1r5ap")
+
+[node name="Room Woven dusty teal_007" type="MeshInstance3D" parent="Model" unique_id=1144754742]
+material_override = ExtResource("5_l8kj1")
+mesh = ExtResource("6_c8lih")
+surface_material_override/0 = ExtResource("7_hgd7l")
+metadata/kit_collision_managed = true
+
+[node name="Room Woven dusty teal_007_col" type="StaticBody3D" parent="Model/Room Woven dusty teal_007" unique_id=1353559553]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Model/Room Woven dusty teal_007/Room Woven dusty teal_007_col" unique_id=14333223]
+shape = ExtResource("8_ci43b")
+
+[node name="Room Woven faded indigo_003" type="MeshInstance3D" parent="Model" unique_id=466166069]
+material_override = ExtResource("9_3h0jq")
+mesh = ExtResource("10_e7ge0")
+surface_material_override/0 = ExtResource("11_jl325")
+metadata/kit_collision_managed = true
+
+[node name="Room Woven faded indigo_003_col" type="StaticBody3D" parent="Model/Room Woven faded indigo_003" unique_id=2033998872]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Model/Room Woven faded indigo_003/Room Woven faded indigo_003_col" unique_id=609112692]
+shape = ExtResource("12_dwky2")
+
+[node name="Room Woven russet_004" type="MeshInstance3D" parent="Model" unique_id=1747562265]
+material_override = ExtResource("13_u3c2u")
+mesh = ExtResource("14_w84p5")
+surface_material_override/0 = ExtResource("15_0qt8n")
+metadata/kit_collision_managed = true
+
+[node name="Room Woven russet_004_col" type="StaticBody3D" parent="Model/Room Woven russet_004" unique_id=1355431528]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Model/Room Woven russet_004/Room Woven russet_004_col" unique_id=1819330951]
+shape = ExtResource("16_c10lf")
+
+[node name="BraidedHangingCord" type="MeshInstance3D" parent="." unique_id=409553929]
+material_override = ExtResource("17_yy5b5")
+mesh = ExtResource("18_am66i")
+metadata/dynamic_relocated_prop = true
+metadata/kit_collision_managed = true

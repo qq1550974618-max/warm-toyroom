@@ -1,0 +1,17 @@
+.godot/
+.DS_Store
+Thumbs.db
+*.unwrap_cache
+*.tmp
+*.log
+*.pck
+*.exe
+*.wasm
+*.zip
+__pycache__/
+.env
+.env.*
+.edgeone/
+build/
+export_presets.cfg
+export_credentials.cfg

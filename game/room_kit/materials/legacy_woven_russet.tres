@@ -1,0 +1,20 @@
+[gd_resource type="StandardMaterial3D" format=3]
+
+[ext_resource type="Texture2D" path="res://room_kit/textures/v11/cotton_twill_albedo.png" id="1_qrkpt"]
+[ext_resource type="Texture2D" path="res://room_kit/textures/v11/cotton_twill_normal.png" id="2_tr0pc"]
+
+[resource]
+resource_name = "Woven russet"
+cull_mode = 2
+albedo_color = Color(0.57487106, 0.30353206, 0.22091636, 1)
+albedo_texture = ExtResource("1_qrkpt")
+metallic_specular = 0.13
+roughness = 0.94
+normal_enabled = true
+normal_scale = 0.2
+normal_texture = ExtResource("2_tr0pc")
+rim_enabled = true
+rim = 0.055
+rim_tint = 0.8
+uv1_scale = Vector3(2.5, 2.5, 2.5)
+texture_filter = 5

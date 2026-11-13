@@ -1,0 +1,17 @@
+[gd_resource type="StandardMaterial3D" format=3]
+
+[ext_resource type="Texture2D" path="res://room_kit/textures/v18/split_rattan_albedo.png" id="1_3ufhb"]
+[ext_resource type="Texture2D" path="res://room_kit/textures/v18/split_rattan_normal.png" id="2_y2aj6"]
+[ext_resource type="Texture2D" path="res://room_kit/textures/v18/split_rattan_roughness.png" id="3_i63th"]
+
+[resource]
+resource_name = "V18 Wicker honey strand 4"
+albedo_color = Color(0.5766773, 0.44171134, 0.2974853, 1)
+albedo_texture = ExtResource("1_3ufhb")
+metallic_specular = 0.22
+roughness_texture = ExtResource("3_i63th")
+normal_enabled = true
+normal_scale = 0.28
+normal_texture = ExtResource("2_y2aj6")
+texture_filter = 5
+metadata/v18_surface_family = "split_rattan"

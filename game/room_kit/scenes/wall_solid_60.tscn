@@ -1,0 +1,46 @@
+[gd_scene format=3]
+
+[ext_resource type="ArrayMesh" path="res://room_kit/resources/wall_solid_60_WallSolid60_Model_MK_Eggshell_Warm.res" id="1_ej8up"]
+[ext_resource type="Material" path="res://room_kit/materials/mk_eggshell_warm.tres" id="2_s4dfg"]
+[ext_resource type="ArrayMesh" path="res://room_kit/resources/wall_solid_60_WallSolid60_Model_MK_Sage_Painted_Wood.res" id="3_46h2a"]
+[ext_resource type="Material" path="res://room_kit/materials/mk_sage_painted_wood.tres" id="4_apr0k"]
+[ext_resource type="ArrayMesh" path="res://room_kit/resources/wall_solid_60_WallSolid60_Model_MK_Sage_Painted_Wood_Field.res" id="5_p73hs"]
+[ext_resource type="Material" path="res://room_kit/materials/mk_sage_painted_wood_field.tres" id="6_x6oqu"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_wkqf3"]
+size = Vector3(0.6, 8.4, 0.28)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_326sl"]
+size = Vector3(0.6, 2.1, 0.16)
+
+[node name="WallSolid60" type="Node3D" unique_id=1983703211]
+
+[node name="Model" type="Node3D" parent="." unique_id=728633764]
+
+[node name="MK_Eggshell_Warm" type="MeshInstance3D" parent="Model" unique_id=1584944812]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.2, -0.14)
+mesh = ExtResource("1_ej8up")
+surface_material_override/0 = ExtResource("2_s4dfg")
+metadata/kit_collision_managed = true
+
+[node name="MK_Sage_Painted_Wood" type="MeshInstance3D" parent="Model" unique_id=2085371231]
+mesh = ExtResource("3_46h2a")
+surface_material_override/0 = ExtResource("4_apr0k")
+metadata/kit_collision_managed = true
+
+[node name="MK_Sage_Painted_Wood_Field" type="MeshInstance3D" parent="Model" unique_id=2090759857]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.08, 0.02)
+mesh = ExtResource("5_p73hs")
+surface_material_override/0 = ExtResource("6_x6oqu")
+metadata/kit_collision_managed = true
+
+[node name="Collision" type="StaticBody3D" parent="." unique_id=161341193]
+collision_mask = 2
+
+[node name="@CollisionShape3D@2" type="CollisionShape3D" parent="Collision" unique_id=1647314155]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.2, -0.14)
+shape = SubResource("BoxShape3D_wkqf3")
+
+[node name="@CollisionShape3D@3" type="CollisionShape3D" parent="Collision" unique_id=702521717]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.05, 0.08)
+shape = SubResource("BoxShape3D_326sl")

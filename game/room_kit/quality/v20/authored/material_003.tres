@@ -1,0 +1,31 @@
+[gd_resource type="ShaderMaterial" format=3]
+
+[ext_resource type="Shader" path="res://toy_finish.gdshader" id="1_5vfnx"]
+[ext_resource type="Texture2D" path="res://room_kit/textures/v18/worked_metal_albedo.png" id="2_o6o82"]
+[ext_resource type="Texture2D" path="res://room_kit/textures/v18/worked_metal_normal.png" id="3_sswy7"]
+[ext_resource type="Texture2D" path="res://room_kit/textures/v18/worked_metal_roughness.png" id="4_500xo"]
+
+[resource]
+resource_name = "V20 Ultra V15_BearingSteel"
+render_priority = 0
+shader = ExtResource("1_5vfnx")
+shader_parameter/base_map = ExtResource("2_o6o82")
+shader_parameter/bump_map = ExtResource("3_sswy7")
+shader_parameter/rough_map = ExtResource("4_500xo")
+shader_parameter/tint = Color(0.60124344, 0.6262097, 0.6342527, 1)
+shader_parameter/has_base = true
+shader_parameter/has_bump = true
+shader_parameter/has_rough = true
+shader_parameter/roughness_min = 0.3
+shader_parameter/roughness_span = 0.14
+shader_parameter/normal_strength = 0.025
+shader_parameter/specular_amount = 0.48
+shader_parameter/metallic_amount = 0.78
+shader_parameter/coat_amount = 0.0
+shader_parameter/coat_roughness = null
+shader_parameter/fiber_amount = 0.0
+shader_parameter/grain_amount = 0.018
+shader_parameter/gilt_amount = 0.0
+shader_parameter/micro_scale = null
+metadata/v18_surface_family = "worked_metal"
+metadata/quality_profile = "ultra"

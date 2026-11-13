@@ -1,0 +1,21 @@
+[gd_resource type="StandardMaterial3D" format=3]
+
+[ext_resource type="Texture2D" path="res://room_kit/textures/v11/linen_albedo.png" id="1_g6nqb"]
+[ext_resource type="Texture2D" path="res://room_kit/textures/v11/linen_normal.png" id="2_bnmbu"]
+
+[resource]
+resource_name = "MK_Linen_Curtain"
+cull_mode = 2
+albedo_color = Color(0.86, 0.81, 0.72, 1)
+albedo_texture = ExtResource("1_g6nqb")
+metallic_specular = 0.1
+roughness = 0.94
+normal_enabled = true
+normal_scale = 0.16
+normal_texture = ExtResource("2_bnmbu")
+rim_enabled = true
+rim = 0.05
+rim_tint = 0.85
+backlight_enabled = true
+backlight = Color(0.045, 0.037, 0.026, 1)
+texture_filter = 5

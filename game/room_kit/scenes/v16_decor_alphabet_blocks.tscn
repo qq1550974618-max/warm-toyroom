@@ -1,0 +1,71 @@
+[gd_scene format=3]
+
+[ext_resource type="ArrayMesh" path="res://room_kit/resources/alphabet_blocks_AlphabetBlocks_Model_Room_Dust_blue_lacquer_003.res" id="1_pqehq"]
+[ext_resource type="Material" path="res://room_kit/materials/legacy_dust_blue_lacquer.tres" id="2_4aamu"]
+[ext_resource type="Shape3D" path="res://room_kit/resources/alphabet_blocks_AlphabetBlocks_Model_Room_Dust_blue_lacquer_003_Room_Dust_blue_lacquer_003_col_CollisionShape3D.res" id="3_m2ey7"]
+[ext_resource type="ArrayMesh" path="res://room_kit/resources/alphabet_blocks_AlphabetBlocks_Model_Room_Ivory_toy_paint_001.res" id="4_avfkv"]
+[ext_resource type="Material" path="res://room_kit/materials/legacy_ivory_toy_paint.tres" id="5_x0uor"]
+[ext_resource type="Shape3D" path="res://room_kit/resources/alphabet_blocks_AlphabetBlocks_Model_Room_Ivory_toy_paint_001_Room_Ivory_toy_paint_001_col_CollisionShape3D.res" id="6_npf6j"]
+[ext_resource type="ArrayMesh" path="res://room_kit/resources/alphabet_blocks_AlphabetBlocks_Model_Room_Moss_green_lacquer_004.res" id="7_r6sl1"]
+[ext_resource type="Material" path="res://room_kit/materials/legacy_moss_green_lacquer.tres" id="8_3ilji"]
+[ext_resource type="Shape3D" path="res://room_kit/resources/alphabet_blocks_AlphabetBlocks_Model_Room_Moss_green_lacquer_004_Room_Moss_green_lacquer_004_col_CollisionShape3D.res" id="9_86fjo"]
+[ext_resource type="ArrayMesh" path="res://room_kit/resources/alphabet_blocks_AlphabetBlocks_Model_Room_Muted_oxblood_lacquer_004.res" id="10_675ib"]
+[ext_resource type="Material" path="res://room_kit/materials/legacy_muted_oxblood_lacquer.tres" id="11_jih8q"]
+[ext_resource type="Shape3D" path="res://room_kit/resources/alphabet_blocks_AlphabetBlocks_Model_Room_Muted_oxblood_lacquer_004_Room_Muted_oxblood_lacquer_004_col_CollisionShape3D.res" id="12_dbc3k"]
+[ext_resource type="ArrayMesh" path="res://room_kit/resources/v18_fibre_wood_02.res" id="13_q62nu"]
+[ext_resource type="Material" path="res://room_kit/materials/legacy_walnut___open_grain.tres" id="14_8am14"]
+[ext_resource type="Shape3D" path="res://room_kit/resources/alphabet_blocks_AlphabetBlocks_Model_Room_Walnut_-_open_grain_006_Room_Walnut_-_open_grain_006_col_CollisionShape3D.res" id="15_xdrfp"]
+
+[node name="AlphabetBlocks" type="Node3D" unique_id=1018564434]
+
+[node name="Model" type="Node3D" parent="." unique_id=1958372365]
+
+[node name="Room Dust blue lacquer_003" type="MeshInstance3D" parent="Model" unique_id=2011377586]
+mesh = ExtResource("1_pqehq")
+surface_material_override/0 = ExtResource("2_4aamu")
+metadata/kit_collision_managed = true
+
+[node name="Room Dust blue lacquer_003_col" type="StaticBody3D" parent="Model/Room Dust blue lacquer_003" unique_id=660771878]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Model/Room Dust blue lacquer_003/Room Dust blue lacquer_003_col" unique_id=298945267]
+shape = ExtResource("3_m2ey7")
+
+[node name="Room Ivory toy paint_001" type="MeshInstance3D" parent="Model" unique_id=495613999]
+mesh = ExtResource("4_avfkv")
+surface_material_override/0 = ExtResource("5_x0uor")
+metadata/kit_collision_managed = true
+
+[node name="Room Ivory toy paint_001_col" type="StaticBody3D" parent="Model/Room Ivory toy paint_001" unique_id=1211619668]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Model/Room Ivory toy paint_001/Room Ivory toy paint_001_col" unique_id=1865142595]
+shape = ExtResource("6_npf6j")
+
+[node name="Room Moss green lacquer_004" type="MeshInstance3D" parent="Model" unique_id=1561577499]
+mesh = ExtResource("7_r6sl1")
+surface_material_override/0 = ExtResource("8_3ilji")
+metadata/kit_collision_managed = true
+
+[node name="Room Moss green lacquer_004_col" type="StaticBody3D" parent="Model/Room Moss green lacquer_004" unique_id=281861726]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Model/Room Moss green lacquer_004/Room Moss green lacquer_004_col" unique_id=1174061391]
+shape = ExtResource("9_86fjo")
+
+[node name="Room Muted oxblood lacquer_004" type="MeshInstance3D" parent="Model" unique_id=1464094307]
+mesh = ExtResource("10_675ib")
+surface_material_override/0 = ExtResource("11_jih8q")
+metadata/kit_collision_managed = true
+
+[node name="Room Muted oxblood lacquer_004_col" type="StaticBody3D" parent="Model/Room Muted oxblood lacquer_004" unique_id=1416424077]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Model/Room Muted oxblood lacquer_004/Room Muted oxblood lacquer_004_col" unique_id=1783274818]
+shape = ExtResource("12_dbc3k")
+
+[node name="Room Walnut - open grain_006" type="MeshInstance3D" parent="Model" unique_id=1145478949]
+mesh = ExtResource("13_q62nu")
+surface_material_override/0 = ExtResource("14_8am14")
+metadata/kit_collision_managed = true
+
+[node name="Room Walnut - open grain_006_col" type="StaticBody3D" parent="Model/Room Walnut - open grain_006" unique_id=1312637920]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Model/Room Walnut - open grain_006/Room Walnut - open grain_006_col" unique_id=1174810455]
+shape = ExtResource("15_xdrfp")

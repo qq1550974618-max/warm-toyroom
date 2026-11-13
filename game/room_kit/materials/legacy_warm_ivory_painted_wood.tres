@@ -1,0 +1,20 @@
+[gd_resource type="StandardMaterial3D" format=3]
+
+[ext_resource type="Texture2D" path="res://room_kit/textures/v11/wood_paint_albedo.png" id="1_fbr1w"]
+[ext_resource type="Texture2D" path="res://room_kit/textures/v11/wood_paint_normal.png" id="2_r8ye0"]
+[ext_resource type="Texture2D" path="res://room_kit/textures/v11/wood_paint_roughness.png" id="3_l3eqm"]
+
+[resource]
+resource_name = "Warm ivory painted wood"
+albedo_color = Color(0.8433892, 0.77970624, 0.6576277, 1)
+albedo_texture = ExtResource("1_fbr1w")
+metallic_specular = 0.3
+roughness = 0.86
+roughness_texture = ExtResource("3_l3eqm")
+normal_enabled = true
+normal_scale = 0.06
+normal_texture = ExtResource("2_r8ye0")
+clearcoat = 0.1
+clearcoat_roughness = 0.32
+uv1_scale = Vector3(1.5, 1.5, 1.5)
+texture_filter = 5

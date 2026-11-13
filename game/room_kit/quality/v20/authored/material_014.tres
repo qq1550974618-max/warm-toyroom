@@ -1,0 +1,16 @@
+[gd_resource type="ShaderMaterial" format=3]
+
+[ext_resource type="Shader" path="res://flag_cotton.gdshader" id="1_3xuhs"]
+[ext_resource type="Texture2D" path="res://room_kit/quality/v20/textures/flag_cotton_albedo.png" id="2_osu00"]
+[ext_resource type="Texture2D" path="res://room_kit/quality/v20/textures/flag_cotton_normal.png" id="3_618uk"]
+[ext_resource type="Texture2D" path="res://room_kit/quality/v20/textures/flag_cotton_roughness.png" id="4_ogp1r"]
+
+[resource]
+resource_name = "V20 Ultra V16 stitched flag Woven dusty teal"
+render_priority = 0
+shader = ExtResource("1_3xuhs")
+shader_parameter/tint = Color(0.26006746, 0.4492039, 0.46135613, 1)
+shader_parameter/cloth_albedo = ExtResource("2_osu00")
+shader_parameter/cloth_normal = ExtResource("3_618uk")
+shader_parameter/cloth_roughness = ExtResource("4_ogp1r")
+metadata/quality_profile = "ultra"

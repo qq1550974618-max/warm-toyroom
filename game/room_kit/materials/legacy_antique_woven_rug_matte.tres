@@ -1,0 +1,16 @@
+[gd_resource type="StandardMaterial3D" format=3]
+
+[ext_resource type="Texture2D" path="res://assets/toy_room_v5_rug_albedo_generated.png" id="1_o4aj7"]
+[ext_resource type="Texture2D" path="res://assets/toy_room_v5_woven_cotton_normal.png" id="2_5nik4"]
+
+[resource]
+resource_name = "Antique woven rug matte"
+cull_mode = 2
+albedo_texture = ExtResource("1_o4aj7")
+metallic_specular = 0.18
+roughness = 0.94
+normal_enabled = true
+normal_scale = 0.3
+normal_texture = ExtResource("2_5nik4")
+texture_filter = 5
+metadata/_gltf_primary_texture_coord = 0

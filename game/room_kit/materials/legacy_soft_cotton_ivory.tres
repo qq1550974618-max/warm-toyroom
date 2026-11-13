@@ -1,0 +1,20 @@
+[gd_resource type="StandardMaterial3D" format=3]
+
+[ext_resource type="Texture2D" path="res://room_kit/textures/v11/cotton_twill_albedo.png" id="1_rdid2"]
+[ext_resource type="Texture2D" path="res://room_kit/textures/v11/cotton_twill_normal.png" id="2_ack6f"]
+
+[resource]
+resource_name = "Soft cotton ivory"
+cull_mode = 2
+albedo_color = Color(0.8378605, 0.7977378, 0.7083697, 1)
+albedo_texture = ExtResource("1_rdid2")
+metallic_specular = 0.13
+roughness = 0.94
+normal_enabled = true
+normal_scale = 0.2
+normal_texture = ExtResource("2_ack6f")
+rim_enabled = true
+rim = 0.055
+rim_tint = 0.8
+uv1_scale = Vector3(2.5, 2.5, 2.5)
+texture_filter = 5

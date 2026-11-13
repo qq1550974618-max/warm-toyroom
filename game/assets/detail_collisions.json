@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Rug cushion lower",
+    "position": [
+      -4.6,
+      0.23,
+      -0.5
+    ],
+    "size": [
+      2.03,
+      0.46,
+      1.25
+    ],
+    "yaw": 0.15
+  },
+  {
+    "name": "Rug cushion upper",
+    "position": [
+      -5.2,
+      0.61,
+      -0.88
+    ],
+    "size": [
+      1.32,
+      0.32,
+      1.0
+    ],
+    "yaw": -0.2
+  }
+]

@@ -1,0 +1,17 @@
+[gd_resource type="StandardMaterial3D" format=3]
+
+[ext_resource type="Texture2D" path="res://room_kit/quality/v20/textures/pencil_lacquer_albedo.png" id="1_5cbbs"]
+[ext_resource type="Texture2D" path="res://room_kit/quality/v20/textures/pencil_lacquer_normal.png" id="2_1e8kd"]
+[ext_resource type="Texture2D" path="res://room_kit/quality/v20/textures/pencil_lacquer_roughness.png" id="3_vti3i"]
+
+[resource]
+resource_name = "V20 Ultra Wax slate blue"
+albedo_color = Color(0.26006746, 0.43662706, 0.5271128, 1)
+albedo_texture = ExtResource("1_5cbbs")
+metallic_specular = 0.28
+roughness_texture = ExtResource("3_vti3i")
+normal_enabled = true
+normal_scale = 0.32
+normal_texture = ExtResource("2_1e8kd")
+texture_filter = 5
+metadata/quality_profile = "ultra"

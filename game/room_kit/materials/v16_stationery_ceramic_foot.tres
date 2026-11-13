@@ -1,0 +1,16 @@
+[gd_resource type="StandardMaterial3D" format=3]
+
+[ext_resource type="Texture2D" path="res://room_kit/textures/v16/rubber_albedo.png" id="1_ldq00"]
+[ext_resource type="Texture2D" path="res://room_kit/textures/v16/rubber_normal.png" id="2_vq872"]
+[ext_resource type="Texture2D" path="res://room_kit/textures/v16/rubber_roughness.png" id="3_oh5qy"]
+
+[resource]
+resource_name = "Stationery ceramic foot"
+albedo_color = Color(0.7083697, 0.6342527, 0.5370987, 1)
+albedo_texture = ExtResource("1_ldq00")
+metallic_specular = 0.12
+roughness_texture = ExtResource("3_oh5qy")
+normal_enabled = true
+normal_scale = 0.3
+normal_texture = ExtResource("2_vq872")
+texture_filter = 5

@@ -1,0 +1,8 @@
+[gd_resource type="StandardMaterial3D" format=3]
+
+[resource]
+resource_name = "V15_EngravedRecess"
+cull_mode = 2
+albedo_color = Color(0.25278953, 0.21209751, 0.16409834, 1)
+roughness = 0.86
+texture_filter = 5

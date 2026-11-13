@@ -1,0 +1,16 @@
+[gd_resource type="ShaderMaterial" format=3]
+
+[ext_resource type="Shader" path="res://flag_cotton.gdshader" id="1_08vlv"]
+[ext_resource type="Texture2D" path="res://room_kit/quality/v20/textures/flag_cotton_albedo.png" id="2_lxfus"]
+[ext_resource type="Texture2D" path="res://room_kit/quality/v20/textures/flag_cotton_normal.png" id="3_qff3n"]
+[ext_resource type="Texture2D" path="res://room_kit/quality/v20/textures/flag_cotton_roughness.png" id="4_neyjw"]
+
+[resource]
+resource_name = "V20 Ultra V16 stitched flag Soft cotton ivory"
+render_priority = 0
+shader = ExtResource("1_08vlv")
+shader_parameter/tint = Color(0.8378605, 0.7977378, 0.7083697, 1)
+shader_parameter/cloth_albedo = ExtResource("2_lxfus")
+shader_parameter/cloth_normal = ExtResource("3_qff3n")
+shader_parameter/cloth_roughness = ExtResource("4_neyjw")
+metadata/quality_profile = "ultra"

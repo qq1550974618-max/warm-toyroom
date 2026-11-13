@@ -1,0 +1,29 @@
+[gd_resource type="ShaderMaterial" format=3]
+
+[ext_resource type="Shader" path="res://toy_finish.gdshader" id="1_0vx6c"]
+[ext_resource type="Texture2D" path="res://assets/toy_room_v5_wood_table_worn_Diffuse.jpg" id="2_8mpvu"]
+[ext_resource type="Texture2D" path="res://assets/toy_room_v5_wood_table_worn_nor_gl.jpg" id="3_1iibp"]
+[ext_resource type="Texture2D" path="res://room_kit/textures/v11/cabinet_wax_roughness.png" id="4_10q05"]
+
+[resource]
+resource_name = "V15_HoneyOak"
+render_priority = 0
+shader = ExtResource("1_0vx6c")
+shader_parameter/base_map = ExtResource("2_8mpvu")
+shader_parameter/bump_map = ExtResource("3_1iibp")
+shader_parameter/rough_map = ExtResource("4_10q05")
+shader_parameter/tint = Color(1.34, 1.25, 1.1, 1)
+shader_parameter/has_base = true
+shader_parameter/has_bump = true
+shader_parameter/has_rough = true
+shader_parameter/roughness_min = 0.48
+shader_parameter/roughness_span = 0.17
+shader_parameter/normal_strength = 0.13
+shader_parameter/specular_amount = 0.3
+shader_parameter/metallic_amount = 0.0
+shader_parameter/coat_amount = 0.055
+shader_parameter/coat_roughness = null
+shader_parameter/fiber_amount = 0.0
+shader_parameter/grain_amount = 0.025
+shader_parameter/gilt_amount = 0.0
+shader_parameter/micro_scale = null

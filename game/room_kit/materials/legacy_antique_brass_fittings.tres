@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" format=3]
+
+[resource]
+resource_name = "Antique brass fittings"
+albedo_color = Color(0.72202736, 0.58383155, 0.3491902, 1)
+metallic = 0.76
+metallic_specular = 0.45
+roughness = 0.42
+normal_scale = 0.1
+texture_filter = 5

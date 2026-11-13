@@ -1,0 +1,15 @@
+[gd_resource type="StandardMaterial3D" format=3]
+
+[ext_resource type="Texture2D" path="res://room_kit/textures/v16/furniture_walnut_albedo.png" id="1_oqecc"]
+[ext_resource type="Texture2D" path="res://room_kit/textures/v16/furniture_walnut_normal.png" id="2_383n1"]
+[ext_resource type="Texture2D" path="res://room_kit/textures/v16/furniture_walnut_roughness.png" id="3_uuqfi"]
+
+[resource]
+resource_name = "V16 polished walnut furniture"
+albedo_texture = ExtResource("1_oqecc")
+metallic_specular = 0.28
+roughness_texture = ExtResource("3_uuqfi")
+normal_enabled = true
+normal_scale = 0.3
+normal_texture = ExtResource("2_383n1")
+texture_filter = 5

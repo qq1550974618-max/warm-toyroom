@@ -1,0 +1,17 @@
+[gd_resource type="StandardMaterial3D" format=3]
+
+[ext_resource type="Texture2D" path="res://room_kit/quality/v20/textures/cord_fibres_albedo.png" id="1_5khht"]
+[ext_resource type="Texture2D" path="res://room_kit/quality/v20/textures/cord_fibres_normal.png" id="2_8tbdo"]
+[ext_resource type="Texture2D" path="res://room_kit/quality/v20/textures/cord_fibres_roughness.png" id="3_t0ir4"]
+
+[resource]
+resource_name = "V20 Ultra V16 spun cotton cord"
+albedo_color = Color(0.86, 0.8, 0.68, 1)
+albedo_texture = ExtResource("1_5khht")
+metallic_specular = 0.12
+roughness_texture = ExtResource("3_t0ir4")
+normal_enabled = true
+normal_scale = 0.32
+normal_texture = ExtResource("2_8tbdo")
+texture_filter = 5
+metadata/quality_profile = "ultra"

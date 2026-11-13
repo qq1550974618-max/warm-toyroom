@@ -1,0 +1,20 @@
+[gd_resource type="StandardMaterial3D" format=3]
+
+[ext_resource type="Texture2D" path="res://room_kit/textures/v11/cotton_twill_albedo.png" id="1_b2fpp"]
+[ext_resource type="Texture2D" path="res://room_kit/textures/v11/cotton_twill_normal.png" id="2_0qxdp"]
+
+[resource]
+resource_name = "Woven faded indigo"
+cull_mode = 2
+albedo_color = Color(0.2827793, 0.34064347, 0.43662706, 1)
+albedo_texture = ExtResource("1_b2fpp")
+metallic_specular = 0.13
+roughness = 0.94
+normal_enabled = true
+normal_scale = 0.2
+normal_texture = ExtResource("2_0qxdp")
+rim_enabled = true
+rim = 0.055
+rim_tint = 0.8
+uv1_scale = Vector3(2.5, 2.5, 2.5)
+texture_filter = 5

@@ -1,0 +1,58 @@
+[gd_scene format=3]
+
+[ext_resource type="ArrayMesh" path="res://room_kit/resources/ring_toy_RingToy_Model_Detail_Dust_blue_lacquer_v4_001.res" id="1_stam8"]
+[ext_resource type="Material" path="res://room_kit/materials/legacy_dust_blue_lacquer_v4.tres" id="2_72jir"]
+[ext_resource type="Shape3D" path="res://room_kit/resources/ring_toy_RingToy_Model_Detail_Dust_blue_lacquer_v4_001_Detail_Dust_blue_lacquer_v4_001_col_CollisionShape3D.res" id="3_wrqyf"]
+[ext_resource type="ArrayMesh" path="res://room_kit/resources/ring_toy_RingToy_Model_Detail_Ivory_toy_paint_v4_001.res" id="4_n7y36"]
+[ext_resource type="Material" path="res://room_kit/materials/legacy_ivory_toy_paint_v4.tres" id="5_wrx3r"]
+[ext_resource type="Shape3D" path="res://room_kit/resources/ring_toy_RingToy_Model_Detail_Ivory_toy_paint_v4_001_Detail_Ivory_toy_paint_v4_001_col_CollisionShape3D.res" id="6_ym5b7"]
+[ext_resource type="ArrayMesh" path="res://room_kit/resources/ring_toy_RingToy_Model_Detail_Ochre_lacquer_v4_001.res" id="7_uvqt6"]
+[ext_resource type="Material" path="res://room_kit/materials/legacy_ochre_lacquer_v4.tres" id="8_3umvs"]
+[ext_resource type="Shape3D" path="res://room_kit/resources/ring_toy_RingToy_Model_Detail_Ochre_lacquer_v4_001_Detail_Ochre_lacquer_v4_001_col_CollisionShape3D.res" id="9_ynv75"]
+[ext_resource type="ArrayMesh" path="res://room_kit/resources/v18_fibre_wood_01.res" id="10_0hayv"]
+[ext_resource type="Material" path="res://room_kit/materials/legacy_walnut___open_grain.tres" id="11_v4482"]
+[ext_resource type="Shape3D" path="res://room_kit/resources/ring_toy_RingToy_Model_Detail_Walnut___open_grain_001_Detail_Walnut___open_grain_001_col_CollisionShape3D.res" id="12_8s733"]
+
+[node name="RingToy" type="Node3D" unique_id=2059787766]
+
+[node name="Model" type="Node3D" parent="." unique_id=923803610]
+
+[node name="Detail Dust blue lacquer v4_001" type="MeshInstance3D" parent="Model" unique_id=1396554184]
+mesh = ExtResource("1_stam8")
+surface_material_override/0 = ExtResource("2_72jir")
+metadata/kit_collision_managed = true
+
+[node name="Detail Dust blue lacquer v4_001_col" type="StaticBody3D" parent="Model/Detail Dust blue lacquer v4_001" unique_id=1683110539]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Model/Detail Dust blue lacquer v4_001/Detail Dust blue lacquer v4_001_col" unique_id=1140845789]
+shape = ExtResource("3_wrqyf")
+
+[node name="Detail Ivory toy paint v4_001" type="MeshInstance3D" parent="Model" unique_id=208992093]
+mesh = ExtResource("4_n7y36")
+surface_material_override/0 = ExtResource("5_wrx3r")
+metadata/kit_collision_managed = true
+
+[node name="Detail Ivory toy paint v4_001_col" type="StaticBody3D" parent="Model/Detail Ivory toy paint v4_001" unique_id=372179891]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Model/Detail Ivory toy paint v4_001/Detail Ivory toy paint v4_001_col" unique_id=580439334]
+shape = ExtResource("6_ym5b7")
+
+[node name="Detail Ochre lacquer v4_001" type="MeshInstance3D" parent="Model" unique_id=358527771]
+mesh = ExtResource("7_uvqt6")
+surface_material_override/0 = ExtResource("8_3umvs")
+metadata/kit_collision_managed = true
+
+[node name="Detail Ochre lacquer v4_001_col" type="StaticBody3D" parent="Model/Detail Ochre lacquer v4_001" unique_id=1995673376]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Model/Detail Ochre lacquer v4_001/Detail Ochre lacquer v4_001_col" unique_id=312679469]
+shape = ExtResource("9_ynv75")
+
+[node name="Detail Walnut _ open grain_001" type="MeshInstance3D" parent="Model" unique_id=1622124294]
+mesh = ExtResource("10_0hayv")
+surface_material_override/0 = ExtResource("11_v4482")
+metadata/kit_collision_managed = true
+
+[node name="Detail Walnut _ open grain_001_col" type="StaticBody3D" parent="Model/Detail Walnut _ open grain_001" unique_id=552387592]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Model/Detail Walnut _ open grain_001/Detail Walnut _ open grain_001_col" unique_id=546096285]
+shape = ExtResource("12_8s733")

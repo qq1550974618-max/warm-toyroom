@@ -1,0 +1,16 @@
+[gd_resource type="StandardMaterial3D" format=3]
+
+[ext_resource type="Texture2D" path="res://room_kit/textures/v16/pencil_lacquer_albedo.png" id="1_p15qw"]
+[ext_resource type="Texture2D" path="res://room_kit/textures/v16/pencil_lacquer_normal.png" id="2_d1rbh"]
+[ext_resource type="Texture2D" path="res://room_kit/textures/v16/pencil_lacquer_roughness.png" id="3_4o4v2"]
+
+[resource]
+resource_name = "V16 pencil lacquer yellow"
+albedo_color = Color(0.80946815, 0.60124344, 0.26006746, 1)
+albedo_texture = ExtResource("1_p15qw")
+metallic_specular = 0.3
+roughness_texture = ExtResource("3_4o4v2")
+normal_enabled = true
+normal_scale = 0.38
+normal_texture = ExtResource("2_d1rbh")
+texture_filter = 5

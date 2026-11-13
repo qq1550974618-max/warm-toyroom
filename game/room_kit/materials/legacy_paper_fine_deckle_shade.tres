@@ -1,0 +1,18 @@
+[gd_resource type="StandardMaterial3D" format=3]
+
+[ext_resource type="Texture2D" path="res://room_kit/textures/v11/paper_albedo.png" id="1_iqs1e"]
+[ext_resource type="Texture2D" path="res://room_kit/textures/v11/paper_normal.png" id="2_aq63b"]
+[ext_resource type="Texture2D" path="res://room_kit/textures/v11/paper_roughness.png" id="3_acds0"]
+
+[resource]
+resource_name = "Paper fine deckle shade"
+cull_mode = 2
+albedo_color = Color(0.735357, 0.711816, 0.64995646, 1)
+albedo_texture = ExtResource("1_iqs1e")
+metallic_specular = 0.1
+roughness_texture = ExtResource("3_acds0")
+normal_enabled = true
+normal_scale = 0.28
+normal_texture = ExtResource("2_aq63b")
+uv1_scale = Vector3(2.5, 2.5, 2.5)
+texture_filter = 5

@@ -1,0 +1,13 @@
+[gd_resource type="StandardMaterial3D" format=3]
+
+[ext_resource type="Texture2D" path="res://assets/toy_room_v5_wood_table_worn_nor_gl.jpg" id="1_wlba2"]
+
+[resource]
+resource_name = "Painted sage wainscot"
+albedo_color = Color(0.48452926, 0.5516501, 0.5220287, 1)
+metallic_specular = 0.32
+roughness = 0.58
+normal_enabled = true
+normal_scale = 0.13
+normal_texture = ExtResource("1_wlba2")
+texture_filter = 5

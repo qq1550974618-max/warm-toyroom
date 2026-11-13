@@ -1,0 +1,15 @@
+[gd_resource type="StandardMaterial3D" format=3]
+
+[ext_resource type="Texture2D" path="res://room_kit/textures/v16/pencil_cedar_albedo.png" id="1_kagu2"]
+[ext_resource type="Texture2D" path="res://room_kit/textures/v16/pencil_cedar_normal.png" id="2_6njss"]
+[ext_resource type="Texture2D" path="res://room_kit/textures/v16/pencil_cedar_roughness.png" id="3_083v1"]
+
+[resource]
+resource_name = "V16 sharpened pencil cedar"
+albedo_texture = ExtResource("1_kagu2")
+metallic_specular = 0.14
+roughness_texture = ExtResource("3_083v1")
+normal_enabled = true
+normal_scale = 0.42
+normal_texture = ExtResource("2_6njss")
+texture_filter = 5

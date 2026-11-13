@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="description" content="在暖光玩具房里跑跳、搬玩具，收集五枚星光。">
+  <meta name="theme-color" content="#21150f">
+  <title>暖光玩具房 · V30 网页试玩</title>
+  <link rel="stylesheet" href="shell.css">
+  <script defer src="index.js"></script>
+  <script defer src="payload.js"></script>
+  <script defer src="touch.js"></script>
+  <script defer src="boot.js"></script>
+</head>
+<body>
+  <main>
+    <button id="fullscreen" type="button" aria-label="全屏游戏">全屏</button>
+    <canvas id="game" width="1280" height="720" tabindex="0" aria-label="暖光玩具房游戏画面"></canvas>
+    <div id="look" hidden>点击画面锁定鼠标 · Esc 暂停</div>
+    <div id="touch-hud" hidden aria-label="手机试玩控制">
+      <div class="touch-menu">
+        <button type="button" data-touch-key="swap">换人</button>
+        <button type="button" data-touch-key="companion">同伴</button>
+        <button type="button" data-touch-key="pause">暂停</button>
+        <button type="button" data-touch-key="options">画质</button>
+      </div>
+      <div id="orientation-tip" hidden>横屏游玩效果更好</div>
+      <div id="touch-tip">拖动画面转动视角</div>
+      <div id="touch-stick" aria-label="移动摇杆"><span></span></div>
+      <div class="touch-actions">
+        <button type="button" data-touch-key="sprint">跑</button>
+        <button type="button" data-touch-key="roll">翻滚</button>
+        <button type="button" data-touch-key="jump">跳跃</button>
+        <button type="button" data-touch-key="interact">互动</button>
+        <button type="button" data-touch-key="pickup">拿放</button>
+        <button type="button" data-touch-key="throw" aria-label="按住蓄力，松手投掷">投掷</button>
+      </div>
+    </div>
+    <section id="intro" aria-labelledby="title">
+      <div class="card">
+        <p class="edition"><span aria-hidden="true">✦</span> V30 网页试玩</p>
+        <h1 id="title">暖光玩具房</h1>
+        <p class="subtitle">沿着书本和线轴，找到散落在房间里的五枚星光。</p>
+        <div class="actions">
+          <button type="button" id="play">电脑试玩</button>
+          <button type="button" class="secondary" id="mobile">手机试玩</button>
+        </div>
+        <progress id="progress" max="100" value="0" hidden></progress>
+        <p id="status" role="status" aria-live="polite"></p>
+        <p class="controls"><kbd>WASD</kbd> 移动 <kbd>空格</kbd> 跳跃 <kbd>E</kbd> 互动 <kbd>L</kbd> 光线与画质</p>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

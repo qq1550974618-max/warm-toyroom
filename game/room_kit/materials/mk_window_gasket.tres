@@ -1,0 +1,8 @@
+[gd_resource type="StandardMaterial3D" format=3]
+
+[resource]
+resource_name = "MK_Window_Gasket"
+albedo_color = Color(0.075, 0.085, 0.079, 1)
+metallic_specular = 0.15
+roughness = 0.84
+texture_filter = 5

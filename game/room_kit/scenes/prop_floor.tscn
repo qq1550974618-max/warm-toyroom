@@ -1,0 +1,71 @@
+[gd_scene format=3]
+
+[ext_resource type="ArrayMesh" path="res://room_kit/resources/floor_Floor_Model_Detail_Fine_cotton_cream_002.res" id="1_j1u87"]
+[ext_resource type="Material" path="res://room_kit/materials/legacy_fine_cotton_cream.tres" id="2_l3y8h"]
+[ext_resource type="Shape3D" path="res://room_kit/resources/floor_Floor_Model_Detail_Fine_cotton_cream_002_Detail_Fine_cotton_cream_002_col_CollisionShape3D.res" id="3_cm5ji"]
+[ext_resource type="ArrayMesh" path="res://room_kit/resources/floor_Floor_Model_Room_Blackened_iron_001.res" id="4_ci6ge"]
+[ext_resource type="Material" path="res://room_kit/materials/legacy_blackened_iron.tres" id="5_11vyo"]
+[ext_resource type="Shape3D" path="res://room_kit/resources/floor_Floor_Model_Room_Blackened_iron_001_Room_Blackened_iron_001_col_CollisionShape3D.res" id="6_ycdu6"]
+[ext_resource type="ArrayMesh" path="res://room_kit/resources/floor_Floor_Model_Room_Deep_seams_001.res" id="7_nnh7g"]
+[ext_resource type="Material" path="res://room_kit/materials/legacy_deep_seams.tres" id="8_tvpm3"]
+[ext_resource type="Shape3D" path="res://room_kit/resources/floor_Floor_Model_Room_Deep_seams_001_Room_Deep_seams_001_col_CollisionShape3D.res" id="9_k1w8t"]
+[ext_resource type="ArrayMesh" path="res://room_kit/resources/floor_Floor_Model_Room_Oak_-_worn_boards_001.res" id="10_2xcqf"]
+[ext_resource type="Material" path="res://room_kit/materials/legacy_oak___worn_boards.tres" id="11_grvne"]
+[ext_resource type="Shape3D" path="res://room_kit/resources/floor_Floor_Model_Room_Oak_-_worn_boards_001_Room_Oak_-_worn_boards_001_col_CollisionShape3D.res" id="12_6pk5e"]
+[ext_resource type="ArrayMesh" path="res://room_kit/resources/floor_Floor_Model_Room_Soft_cotton_ivory_001.res" id="13_iwqkw"]
+[ext_resource type="Material" path="res://room_kit/materials/legacy_soft_cotton_ivory.tres" id="14_sccn0"]
+[ext_resource type="Shape3D" path="res://room_kit/resources/floor_Floor_Model_Room_Soft_cotton_ivory_001_Room_Soft_cotton_ivory_001_col_CollisionShape3D.res" id="15_xnccq"]
+
+[node name="Floor" type="Node3D" unique_id=1728731633]
+
+[node name="Model" type="Node3D" parent="." unique_id=1018257562]
+
+[node name="Detail Fine cotton cream_002" type="MeshInstance3D" parent="Model" unique_id=1966181198]
+mesh = ExtResource("1_j1u87")
+surface_material_override/0 = ExtResource("2_l3y8h")
+metadata/kit_collision_managed = true
+
+[node name="Detail Fine cotton cream_002_col" type="StaticBody3D" parent="Model/Detail Fine cotton cream_002" unique_id=791071446]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Model/Detail Fine cotton cream_002/Detail Fine cotton cream_002_col" unique_id=1265692499]
+shape = ExtResource("3_cm5ji")
+
+[node name="Room Blackened iron_001" type="MeshInstance3D" parent="Model" unique_id=1160560644]
+mesh = ExtResource("4_ci6ge")
+surface_material_override/0 = ExtResource("5_11vyo")
+metadata/kit_collision_managed = true
+
+[node name="Room Blackened iron_001_col" type="StaticBody3D" parent="Model/Room Blackened iron_001" unique_id=240007599]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Model/Room Blackened iron_001/Room Blackened iron_001_col" unique_id=118332635]
+shape = ExtResource("6_ycdu6")
+
+[node name="Room Deep seams_001" type="MeshInstance3D" parent="Model" unique_id=938575440]
+mesh = ExtResource("7_nnh7g")
+surface_material_override/0 = ExtResource("8_tvpm3")
+metadata/kit_collision_managed = true
+
+[node name="Room Deep seams_001_col" type="StaticBody3D" parent="Model/Room Deep seams_001" unique_id=584958935]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Model/Room Deep seams_001/Room Deep seams_001_col" unique_id=1248239316]
+shape = ExtResource("9_k1w8t")
+
+[node name="Room Oak - worn boards_001" type="MeshInstance3D" parent="Model" unique_id=969826491]
+mesh = ExtResource("10_2xcqf")
+surface_material_override/0 = ExtResource("11_grvne")
+metadata/kit_collision_managed = true
+
+[node name="Room Oak - worn boards_001_col" type="StaticBody3D" parent="Model/Room Oak - worn boards_001" unique_id=12671366]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Model/Room Oak - worn boards_001/Room Oak - worn boards_001_col" unique_id=872438634]
+shape = ExtResource("12_6pk5e")
+
+[node name="Room Soft cotton ivory_001" type="MeshInstance3D" parent="Model" unique_id=1025060936]
+mesh = ExtResource("13_iwqkw")
+surface_material_override/0 = ExtResource("14_sccn0")
+metadata/kit_collision_managed = true
+
+[node name="Room Soft cotton ivory_001_col" type="StaticBody3D" parent="Model/Room Soft cotton ivory_001" unique_id=2030150700]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Model/Room Soft cotton ivory_001/Room Soft cotton ivory_001_col" unique_id=1977353471]
+shape = ExtResource("15_xnccq")

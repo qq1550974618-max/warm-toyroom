@@ -1,0 +1,20 @@
+[gd_scene format=3]
+
+[ext_resource type="ArrayMesh" path="res://room_kit/resources/crown_120_Crown120_Model_MK_Ivory_Enamel_002.res" id="1_hhiut"]
+[ext_resource type="Material" path="res://room_kit/materials/mk_ivory_enamel.tres" id="2_jnf3u"]
+[ext_resource type="Shape3D" path="res://room_kit/resources/crown_120_Crown120_Model_MK_Ivory_Enamel_002_MK_Ivory_Enamel_002_col_CollisionShape3D.res" id="3_5phit"]
+
+[node name="Crown120" type="Node3D" unique_id=373647229]
+
+[node name="Model" type="Node3D" parent="." unique_id=1897462633]
+
+[node name="MK_Ivory_Enamel_002" type="MeshInstance3D" parent="Model" unique_id=1096792587]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 8.14, 0.0375)
+mesh = ExtResource("1_hhiut")
+surface_material_override/0 = ExtResource("2_jnf3u")
+metadata/kit_collision_managed = true
+
+[node name="MK_Ivory_Enamel_002_col" type="StaticBody3D" parent="Model/MK_Ivory_Enamel_002" unique_id=1391355869]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Model/MK_Ivory_Enamel_002/MK_Ivory_Enamel_002_col" unique_id=1685916121]
+shape = ExtResource("3_5phit")

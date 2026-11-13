@@ -1,0 +1,246 @@
+{
+	"materials": {
+		"res://room_kit/materials/legacy_wax_golden_ochre.tres": "res://room_kit/quality/v20/authored/material_000.tres",
+		"res://room_kit/materials/legacy_wax_muted_vermilion.tres": "res://room_kit/quality/v20/authored/material_001.tres",
+		"res://room_kit/materials/legacy_wax_slate_blue.tres": "res://room_kit/quality/v20/authored/material_002.tres",
+		"res://room_kit/materials/v16_chair_upholstery.tres": "res://room_kit/quality/v20/authored/material_012.tres",
+		"res://room_kit/materials/v16_cotton_cord.tres": "res://room_kit/quality/v20/authored/material_017.tres",
+		"res://room_kit/materials/v16_flag_Room_Soft_cotton_ivory_009.tres": "res://room_kit/quality/v20/authored/material_013.tres",
+		"res://room_kit/materials/v16_flag_Room_Woven_dusty_teal_007.tres": "res://room_kit/quality/v20/authored/material_014.tres",
+		"res://room_kit/materials/v16_flag_Room_Woven_faded_indigo_003.tres": "res://room_kit/quality/v20/authored/material_015.tres",
+		"res://room_kit/materials/v16_flag_Room_Woven_russet_004.tres": "res://room_kit/quality/v20/authored/material_016.tres",
+		"res://room_kit/materials/v16_furniture_walnut.tres": "res://room_kit/quality/v20/authored/material_011.tres",
+		"res://room_kit/materials/v16_stationery_blue_lacquer.tres": "res://room_kit/quality/v20/authored/material_024.tres",
+		"res://room_kit/materials/v16_stationery_cedar.tres": "res://room_kit/quality/v20/authored/material_021.tres",
+		"res://room_kit/materials/v16_stationery_ceramic_foot.tres": "res://room_kit/quality/v20/authored/material_027.tres",
+		"res://room_kit/materials/v16_stationery_ivory_lacquer.tres": "res://room_kit/quality/v20/authored/material_025.tres",
+		"res://room_kit/materials/v16_stationery_red_lacquer.tres": "res://room_kit/quality/v20/authored/material_020.tres",
+		"res://room_kit/materials/v16_stationery_rubber.tres": "res://room_kit/quality/v20/authored/material_022.tres",
+		"res://room_kit/materials/v16_stationery_teal_ceramic.tres": "res://room_kit/quality/v20/authored/material_026.tres",
+		"res://room_kit/materials/v16_stationery_yellow_lacquer.tres": "res://room_kit/quality/v20/authored/material_023.tres",
+		"res://room_kit/materials/v18/Frame_pale_ash_wood.tres": "res://room_kit/quality/v20/authored/material_029.tres",
+		"res://room_kit/materials/v18/V15_BearingSteel.tres": "res://room_kit/quality/v20/authored/material_003.tres",
+		"res://room_kit/materials/v18/V15_BluePaint.tres": "res://room_kit/quality/v20/authored/material_004.tres",
+		"res://room_kit/materials/v18/V15_BrushedBrass.tres": "res://room_kit/quality/v20/authored/material_005.tres",
+		"res://room_kit/materials/v18/V15_ButtonRed.tres": "res://room_kit/quality/v20/authored/material_032.tres",
+		"res://room_kit/materials/v18/V15_CreamPaint.tres": "res://room_kit/quality/v20/authored/material_006.tres",
+		"res://room_kit/materials/v18/V15_EndGrain.tres": "res://room_kit/quality/v20/authored/material_030.tres",
+		"res://room_kit/materials/v18/V15_GreenPaint.tres": "res://room_kit/quality/v20/authored/material_007.tres",
+		"res://room_kit/materials/v18/V15_HoneyOak.tres": "res://room_kit/quality/v20/authored/material_008.tres",
+		"res://room_kit/materials/v18/V15_OchrePaint.tres": "res://room_kit/quality/v20/authored/material_009.tres",
+		"res://room_kit/materials/v18/V15_OrangePaint.tres": "res://room_kit/quality/v20/authored/material_031.tres",
+		"res://room_kit/materials/v18/V15_RedPaint.tres": "res://room_kit/quality/v20/authored/material_010.tres",
+		"res://room_kit/materials/v18/V16_Desk_woven_cover_moss_green.tres": "res://room_kit/quality/v20/authored/material_018.tres",
+		"res://room_kit/materials/v18/V16_Desk_woven_cover_muted_oxblood.tres": "res://room_kit/quality/v20/authored/material_019.tres",
+		"res://room_kit/materials/v18/Walnut___open_grain.tres": "res://room_kit/quality/v20/authored/material_028.tres"
+	},
+	"meshes": {
+		"Room/Props/AlphabetBlocks/Model/Room Walnut - open grain_006": "res://room_kit/quality/v20/authored/wood_uv_00.res",
+		"Room/Props/ChestAndRabbit/Model/Room Walnut - open grain_002": "res://room_kit/quality/v20/authored/wood_uv_01.res",
+		"Room/Props/FloorCushions/Model/Room Walnut - open grain_008": "res://room_kit/quality/v20/authored/wood_uv_02.res",
+		"Room/Props/RingToy/Model/Detail Walnut _ open grain_001": "res://room_kit/quality/v20/authored/wood_uv_03.res",
+		"Room/Props/SmallBlockM/Part_02": "res://room_kit/quality/v20/authored/wood_uv_04.res",
+		"Room/Props/WhalePicture/Model/V5 Walnut _ open grain_001": "res://room_kit/quality/v20/authored/wood_uv_05.res",
+		"cotton_reel/prop_cotton_reel/cotton_reel": "res://room_kit/quality/v20/authored/wood_uv_06.res"
+	},
+	"restoration": [
+		{
+			"action": "lossless_texture",
+			"lossless_textures": true,
+			"name": "Wax golden ochre",
+			"resource": "res://room_kit/quality/v20/authored/material_000.tres"
+		},
+		{
+			"action": "lossless_texture",
+			"lossless_textures": true,
+			"name": "Wax muted vermilion",
+			"resource": "res://room_kit/quality/v20/authored/material_001.tres"
+		},
+		{
+			"action": "lossless_texture",
+			"lossless_textures": true,
+			"name": "Wax slate blue",
+			"resource": "res://room_kit/quality/v20/authored/material_002.tres"
+		},
+		{
+			"action": "restore_procedural_finish_with_pbr_maps",
+			"lossless_textures": false,
+			"name": "V15_BearingSteel",
+			"resource": "res://room_kit/quality/v20/authored/material_003.tres"
+		},
+		{
+			"action": "restore_procedural_finish_with_pbr_maps",
+			"lossless_textures": false,
+			"name": "V15_BluePaint",
+			"resource": "res://room_kit/quality/v20/authored/material_004.tres"
+		},
+		{
+			"action": "restore_procedural_finish_with_pbr_maps",
+			"lossless_textures": false,
+			"name": "V15_BrushedBrass",
+			"resource": "res://room_kit/quality/v20/authored/material_005.tres"
+		},
+		{
+			"action": "restore_procedural_finish_with_pbr_maps",
+			"lossless_textures": false,
+			"name": "V15_CreamPaint",
+			"resource": "res://room_kit/quality/v20/authored/material_006.tres"
+		},
+		{
+			"action": "restore_procedural_finish_with_pbr_maps",
+			"lossless_textures": false,
+			"name": "V15_GreenPaint",
+			"resource": "res://room_kit/quality/v20/authored/material_007.tres"
+		},
+		{
+			"action": "restore_v16_material",
+			"lossless_textures": false,
+			"name": "V15_HoneyOak",
+			"resource": "res://room_kit/quality/v20/authored/material_008.tres"
+		},
+		{
+			"action": "restore_procedural_finish_with_pbr_maps",
+			"lossless_textures": false,
+			"name": "V15_OchrePaint",
+			"resource": "res://room_kit/quality/v20/authored/material_009.tres"
+		},
+		{
+			"action": "restore_procedural_finish_with_pbr_maps",
+			"lossless_textures": false,
+			"name": "V15_RedPaint",
+			"resource": "res://room_kit/quality/v20/authored/material_010.tres"
+		},
+		{
+			"action": "lossless_texture",
+			"lossless_textures": true,
+			"name": "V16 polished walnut furniture",
+			"resource": "res://room_kit/quality/v20/authored/material_011.tres"
+		},
+		{
+			"action": "lossless_texture",
+			"lossless_textures": true,
+			"name": "V16 upholstered chair seat",
+			"resource": "res://room_kit/quality/v20/authored/material_012.tres"
+		},
+		{
+			"action": "lossless_texture",
+			"lossless_textures": true,
+			"name": "V16 stitched flag Soft cotton ivory",
+			"resource": "res://room_kit/quality/v20/authored/material_013.tres"
+		},
+		{
+			"action": "lossless_texture",
+			"lossless_textures": true,
+			"name": "V16 stitched flag Woven dusty teal",
+			"resource": "res://room_kit/quality/v20/authored/material_014.tres"
+		},
+		{
+			"action": "lossless_texture",
+			"lossless_textures": true,
+			"name": "V16 stitched flag Woven faded indigo",
+			"resource": "res://room_kit/quality/v20/authored/material_015.tres"
+		},
+		{
+			"action": "lossless_texture",
+			"lossless_textures": true,
+			"name": "V16 stitched flag Woven russet",
+			"resource": "res://room_kit/quality/v20/authored/material_016.tres"
+		},
+		{
+			"action": "lossless_texture",
+			"lossless_textures": true,
+			"name": "V16 spun cotton cord",
+			"resource": "res://room_kit/quality/v20/authored/material_017.tres"
+		},
+		{
+			"action": "restore_v16_material",
+			"lossless_textures": true,
+			"name": "V16 Desk woven cover moss_green",
+			"resource": "res://room_kit/quality/v20/authored/material_018.tres"
+		},
+		{
+			"action": "restore_v16_material",
+			"lossless_textures": true,
+			"name": "V16 Desk woven cover muted_oxblood",
+			"resource": "res://room_kit/quality/v20/authored/material_019.tres"
+		},
+		{
+			"action": "lossless_texture",
+			"lossless_textures": true,
+			"name": "Stationery red lacquer",
+			"resource": "res://room_kit/quality/v20/authored/material_020.tres"
+		},
+		{
+			"action": "lossless_texture",
+			"lossless_textures": true,
+			"name": "V16 sharpened pencil cedar",
+			"resource": "res://room_kit/quality/v20/authored/material_021.tres"
+		},
+		{
+			"action": "lossless_texture",
+			"lossless_textures": true,
+			"name": "V16 rubber eraser",
+			"resource": "res://room_kit/quality/v20/authored/material_022.tres"
+		},
+		{
+			"action": "lossless_texture",
+			"lossless_textures": true,
+			"name": "Stationery yellow lacquer",
+			"resource": "res://room_kit/quality/v20/authored/material_023.tres"
+		},
+		{
+			"action": "lossless_texture",
+			"lossless_textures": true,
+			"name": "Stationery blue lacquer",
+			"resource": "res://room_kit/quality/v20/authored/material_024.tres"
+		},
+		{
+			"action": "lossless_texture",
+			"lossless_textures": true,
+			"name": "Stationery ivory lacquer",
+			"resource": "res://room_kit/quality/v20/authored/material_025.tres"
+		},
+		{
+			"action": "lossless_texture",
+			"lossless_textures": true,
+			"name": "Stationery teal ceramic",
+			"resource": "res://room_kit/quality/v20/authored/material_026.tres"
+		},
+		{
+			"action": "lossless_texture",
+			"lossless_textures": true,
+			"name": "Stationery ceramic foot",
+			"resource": "res://room_kit/quality/v20/authored/material_027.tres"
+		},
+		{
+			"action": "restore_v16_material",
+			"lossless_textures": false,
+			"name": "Walnut / open grain",
+			"resource": "res://room_kit/quality/v20/authored/material_028.tres"
+		},
+		{
+			"action": "restore_v16_material",
+			"lossless_textures": false,
+			"name": "Frame pale ash wood",
+			"resource": "res://room_kit/quality/v20/authored/material_029.tres"
+		},
+		{
+			"action": "restore_v16_material",
+			"lossless_textures": false,
+			"name": "V15_EndGrain",
+			"resource": "res://room_kit/quality/v20/authored/material_030.tres"
+		},
+		{
+			"action": "restore_procedural_finish_with_pbr_maps",
+			"lossless_textures": false,
+			"name": "V15_OrangePaint",
+			"resource": "res://room_kit/quality/v20/authored/material_031.tres"
+		},
+		{
+			"action": "restore_procedural_finish_with_pbr_maps",
+			"lossless_textures": false,
+			"name": "V15_ButtonRed",
+			"resource": "res://room_kit/quality/v20/authored/material_032.tres"
+		}
+	]
+}

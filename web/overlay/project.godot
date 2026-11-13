@@ -1,0 +1,48 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="鲸鱼女仆 · 暖光玩具房 V30"
+run/main_scene="res://room.tscn"
+config/features=PackedStringArray("4.8", "GL Compatibility")
+config/icon="res://icon.svg"
+
+[debug]
+
+movie_writer/mjpeg_quality=0.87
+movie_writer/fps=60
+
+[display]
+
+window/size/viewport_width=2560
+window/size/viewport_height=1440
+window/size/window_width_override=1920
+window/size/window_height_override=1080
+window/stretch/mode="canvas_items"
+
+
+[physics]
+
+common/physics_interpolation=true
+
+[audio]
+general/default_playback_type.web=0
+[gui]
+theme/custom_font="res://web/noto_sans_sc.ttf"
+[rendering]
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
+lights_and_shadows/directional_shadow/size=2048
+lights_and_shadows/directional_shadow/16_bits=false
+lights_and_shadows/positional_shadow/atlas_size=1024
+textures/default_filters/anisotropic_filtering_level=2
+textures/vram_compression/import_etc2_astc=true
+environment/defaults/default_clear_color=Color(0.025, 0.022, 0.017, 1)

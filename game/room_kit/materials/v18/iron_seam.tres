@@ -1,0 +1,20 @@
+[gd_resource type="StandardMaterial3D" format=3]
+
+[ext_resource type="Texture2D" path="res://room_kit/textures/v18/worked_metal_albedo.png" id="1_ia2gy"]
+[ext_resource type="Texture2D" path="res://room_kit/textures/v18/worked_metal_normal.png" id="2_forwx"]
+[ext_resource type="Texture2D" path="res://room_kit/textures/v18/worked_metal_roughness.png" id="3_fdjl8"]
+
+[resource]
+resource_name = "V18 iron_seam"
+albedo_color = Color(0.12, 0.14, 0.16, 1)
+albedo_texture = ExtResource("1_ia2gy")
+metallic = 0.88
+roughness_texture = ExtResource("3_fdjl8")
+normal_enabled = true
+normal_scale = 0.12
+normal_texture = ExtResource("2_forwx")
+anisotropy_enabled = true
+anisotropy = 0.22
+uv1_scale = Vector3(2, 2, 2)
+texture_filter = 5
+metadata/v18_surface_family = "worked_metal"

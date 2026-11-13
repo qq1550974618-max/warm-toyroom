@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" format=3]
+
+[resource]
+resource_name = "V20 Ultra V15_EndGrain"
+cull_mode = 2
+albedo_color = Color(0.6651851, 0.5271128, 0.36556464, 1)
+roughness = 0.62
+texture_filter = 5
+metadata/v18_surface_family = "cut_endgrain"
+metadata/quality_profile = "ultra"

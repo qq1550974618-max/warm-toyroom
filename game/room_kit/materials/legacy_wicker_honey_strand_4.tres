@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" format=3]
+
+[resource]
+resource_name = "Wicker honey strand 4"
+albedo_color = Color(0.5766773, 0.44171134, 0.2974853, 1)
+metallic_specular = 0.35
+roughness = 0.55
+normal_scale = 0.08
+texture_filter = 5

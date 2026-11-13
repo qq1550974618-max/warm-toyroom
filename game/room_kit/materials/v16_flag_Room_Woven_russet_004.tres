@@ -1,0 +1,15 @@
+[gd_resource type="ShaderMaterial" format=3]
+
+[ext_resource type="Shader" path="res://flag_cotton.gdshader" id="1_u50vn"]
+[ext_resource type="Texture2D" path="res://room_kit/textures/v16/flag_cotton_albedo.png" id="2_jx078"]
+[ext_resource type="Texture2D" path="res://room_kit/textures/v16/flag_cotton_normal.png" id="3_s205n"]
+[ext_resource type="Texture2D" path="res://room_kit/textures/v16/flag_cotton_roughness.png" id="4_d2dfn"]
+
+[resource]
+resource_name = "V16 stitched flag Woven russet"
+render_priority = 0
+shader = ExtResource("1_u50vn")
+shader_parameter/tint = Color(0.57487106, 0.30353206, 0.22091636, 1)
+shader_parameter/cloth_albedo = ExtResource("2_jx078")
+shader_parameter/cloth_normal = ExtResource("3_s205n")
+shader_parameter/cloth_roughness = ExtResource("4_d2dfn")

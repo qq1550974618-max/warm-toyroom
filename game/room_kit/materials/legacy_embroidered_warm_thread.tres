@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" format=3]
+
+[resource]
+resource_name = "Embroidered warm thread"
+cull_mode = 2
+albedo_color = Color(0.34064347, 0.21802102, 0.17184411, 1)
+metallic_specular = 0.18
+roughness = 0.94
+normal_scale = 0.3
+texture_filter = 5

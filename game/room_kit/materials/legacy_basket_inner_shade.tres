@@ -1,0 +1,7 @@
+[gd_resource type="StandardMaterial3D" format=3]
+
+[resource]
+resource_name = "Basket inner shade"
+albedo_color = Color(0.26006746, 0.19641912, 0.13816993, 1)
+roughness = 0.92
+texture_filter = 5

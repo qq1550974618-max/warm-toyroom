@@ -1,0 +1,16 @@
+[gd_resource type="StandardMaterial3D" format=3]
+
+[ext_resource type="Texture2D" path="res://room_kit/textures/v16/pencil_lacquer_albedo.png" id="1_hlbns"]
+[ext_resource type="Texture2D" path="res://room_kit/textures/v16/pencil_lacquer_normal.png" id="2_0xojr"]
+[ext_resource type="Texture2D" path="res://room_kit/textures/v16/pencil_lacquer_roughness.png" id="3_ruypt"]
+
+[resource]
+resource_name = "Wax muted vermilion"
+albedo_color = Color(0.672633, 0.30353206, 0.19966345, 1)
+albedo_texture = ExtResource("1_hlbns")
+metallic_specular = 0.28
+roughness_texture = ExtResource("3_ruypt")
+normal_enabled = true
+normal_scale = 0.32
+normal_texture = ExtResource("2_0xojr")
+texture_filter = 5

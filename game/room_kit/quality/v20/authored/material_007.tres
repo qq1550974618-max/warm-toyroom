@@ -1,0 +1,31 @@
+[gd_resource type="ShaderMaterial" format=3]
+
+[ext_resource type="Shader" path="res://toy_finish.gdshader" id="1_h2gy7"]
+[ext_resource type="Texture2D" path="res://room_kit/textures/v18/painted_wood_albedo.png" id="2_sfrio"]
+[ext_resource type="Texture2D" path="res://room_kit/textures/v18/painted_wood_normal.png" id="3_1cecj"]
+[ext_resource type="Texture2D" path="res://room_kit/textures/v18/painted_wood_roughness.png" id="4_aelfy"]
+
+[resource]
+resource_name = "V20 Ultra V15_GreenPaint"
+render_priority = 0
+shader = ExtResource("1_h2gy7")
+shader_parameter/base_map = ExtResource("2_sfrio")
+shader_parameter/bump_map = ExtResource("3_1cecj")
+shader_parameter/rough_map = ExtResource("4_aelfy")
+shader_parameter/tint = Color(0.3574912, 0.5220287, 0.49010885, 1)
+shader_parameter/has_base = true
+shader_parameter/has_bump = true
+shader_parameter/has_rough = true
+shader_parameter/roughness_min = 0.41
+shader_parameter/roughness_span = 0.13
+shader_parameter/normal_strength = 0.035
+shader_parameter/specular_amount = 0.31
+shader_parameter/metallic_amount = 0.0
+shader_parameter/coat_amount = 0.06
+shader_parameter/coat_roughness = null
+shader_parameter/fiber_amount = 0.0
+shader_parameter/grain_amount = 0.025
+shader_parameter/gilt_amount = 0.0
+shader_parameter/micro_scale = null
+metadata/v18_surface_family = "painted_wood"
+metadata/quality_profile = "ultra"

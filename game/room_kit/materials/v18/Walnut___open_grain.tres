@@ -1,0 +1,19 @@
+[gd_resource type="StandardMaterial3D" format=3]
+
+[ext_resource type="Texture2D" path="res://assets/toy_room_v5_wood_table_worn_Diffuse.jpg" id="1_7yxeg"]
+[ext_resource type="Texture2D" path="res://assets/toy_room_v5_wood_table_worn_nor_gl.jpg" id="2_6dye3"]
+[ext_resource type="Texture2D" path="res://room_kit/textures/v11/cabinet_wax_roughness.png" id="3_2sgor"]
+
+[resource]
+resource_name = "V18 Walnut / open grain"
+albedo_color = Color(1.25, 1.16, 1.02, 1)
+albedo_texture = ExtResource("1_7yxeg")
+metallic_specular = 0.23
+metallic_texture_channel = 2
+roughness_texture = ExtResource("3_2sgor")
+normal_enabled = true
+normal_scale = 0.18
+normal_texture = ExtResource("2_6dye3")
+texture_filter = 5
+metadata/_gltf_primary_texture_coord = 0
+metadata/v18_surface_family = "finished_walnut"

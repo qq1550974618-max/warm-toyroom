@@ -1,0 +1,16 @@
+[gd_resource type="StandardMaterial3D" format=3]
+
+[ext_resource type="Texture2D" path="res://room_kit/textures/v16/pencil_lacquer_albedo.png" id="1_yxekv"]
+[ext_resource type="Texture2D" path="res://room_kit/textures/v16/pencil_lacquer_normal.png" id="2_5f0hj"]
+[ext_resource type="Texture2D" path="res://room_kit/textures/v16/pencil_lacquer_roughness.png" id="3_cgt5c"]
+
+[resource]
+resource_name = "Stationery yellow lacquer"
+albedo_color = Color(0.86504203, 0.6576277, 0.2827793, 1)
+albedo_texture = ExtResource("1_yxekv")
+metallic_specular = 0.28
+roughness_texture = ExtResource("3_cgt5c")
+normal_enabled = true
+normal_scale = 0.28
+normal_texture = ExtResource("2_5f0hj")
+texture_filter = 5

@@ -1,0 +1,16 @@
+[gd_resource type="StandardMaterial3D" format=3]
+
+[ext_resource type="Texture2D" path="res://room_kit/textures/v11/wood_paint_albedo.png" id="1_7ofet"]
+[ext_resource type="Texture2D" path="res://room_kit/textures/v11/wood_paint_normal.png" id="2_ykhue"]
+[ext_resource type="Texture2D" path="res://room_kit/textures/v11/wood_paint_roughness.png" id="3_6v1kf"]
+
+[resource]
+resource_name = "MK_Dusty_Blue_Alternative"
+albedo_color = Color(0.19, 0.28, 0.34, 1)
+albedo_texture = ExtResource("1_7ofet")
+metallic_specular = 0.24
+roughness_texture = ExtResource("3_6v1kf")
+normal_enabled = true
+normal_scale = 0.12
+normal_texture = ExtResource("2_ykhue")
+texture_filter = 5

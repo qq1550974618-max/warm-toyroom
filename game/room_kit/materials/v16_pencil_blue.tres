@@ -1,0 +1,16 @@
+[gd_resource type="StandardMaterial3D" format=3]
+
+[ext_resource type="Texture2D" path="res://room_kit/textures/v16/pencil_lacquer_albedo.png" id="1_ua3gw"]
+[ext_resource type="Texture2D" path="res://room_kit/textures/v16/pencil_lacquer_normal.png" id="2_fdnia"]
+[ext_resource type="Texture2D" path="res://room_kit/textures/v16/pencil_lacquer_roughness.png" id="3_cusdh"]
+
+[resource]
+resource_name = "V16 pencil lacquer blue"
+albedo_color = Color(0.26006746, 0.43662706, 0.5271128, 1)
+albedo_texture = ExtResource("1_ua3gw")
+metallic_specular = 0.3
+roughness_texture = ExtResource("3_cusdh")
+normal_enabled = true
+normal_scale = 0.38
+normal_texture = ExtResource("2_fdnia")
+texture_filter = 5

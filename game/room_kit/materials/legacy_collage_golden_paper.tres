@@ -1,0 +1,18 @@
+[gd_resource type="StandardMaterial3D" format=3]
+
+[ext_resource type="Texture2D" path="res://room_kit/textures/v11/paper_albedo.png" id="1_sxhrl"]
+[ext_resource type="Texture2D" path="res://room_kit/textures/v11/paper_normal.png" id="2_q2xg0"]
+[ext_resource type="Texture2D" path="res://room_kit/textures/v11/paper_roughness.png" id="3_74kdi"]
+
+[resource]
+resource_name = "Collage golden paper"
+albedo_color = Color(0.86504203, 0.6576277, 0.30353206, 1)
+albedo_texture = ExtResource("1_sxhrl")
+metallic = 0.72
+metallic_specular = 0.1
+roughness_texture = ExtResource("3_74kdi")
+normal_enabled = true
+normal_scale = 0.28
+normal_texture = ExtResource("2_q2xg0")
+uv1_scale = Vector3(2.5, 2.5, 2.5)
+texture_filter = 5

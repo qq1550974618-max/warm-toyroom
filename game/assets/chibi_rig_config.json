@@ -1,0 +1,2055 @@
+{
+  "bones": [
+    {
+      "name": "Root",
+      "point": [
+        0,
+        0,
+        0
+      ],
+      "parent": null
+    },
+    {
+      "name": "Hip",
+      "point": [
+        0.055,
+        0.278,
+        0.002
+      ],
+      "parent": "Root"
+    },
+    {
+      "name": "Pelvis",
+      "point": [
+        0.055,
+        0.263,
+        0.002
+      ],
+      "parent": "Hip"
+    },
+    {
+      "name": "Waist",
+      "point": [
+        0.055,
+        0.322,
+        0.002
+      ],
+      "parent": "Hip"
+    },
+    {
+      "name": "Spine01",
+      "point": [
+        0.055,
+        0.36,
+        0.002
+      ],
+      "parent": "Waist"
+    },
+    {
+      "name": "Spine02",
+      "point": [
+        0.055,
+        0.406,
+        0.002
+      ],
+      "parent": "Spine01"
+    },
+    {
+      "name": "NeckTwist01",
+      "point": [
+        0.055,
+        0.438,
+        0.002
+      ],
+      "parent": "Spine02"
+    },
+    {
+      "name": "NeckTwist02",
+      "point": [
+        0.055,
+        0.457,
+        0.002
+      ],
+      "parent": "NeckTwist01"
+    },
+    {
+      "name": "Head",
+      "point": [
+        0.055,
+        0.477,
+        0.002
+      ],
+      "parent": "NeckTwist02"
+    },
+    {
+      "name": "L_Thigh",
+      "point": [
+        0.055,
+        0.263,
+        -0.055
+      ],
+      "parent": "Pelvis"
+    },
+    {
+      "name": "L_Calf",
+      "point": [
+        0.065,
+        0.149,
+        -0.055
+      ],
+      "parent": "L_Thigh"
+    },
+    {
+      "name": "L_Foot",
+      "point": [
+        0.052,
+        0.045,
+        -0.055
+      ],
+      "parent": "L_Calf"
+    },
+    {
+      "name": "L_ToeBase",
+      "point": [
+        0.112,
+        0.023,
+        -0.055
+      ],
+      "parent": "L_Foot"
+    },
+    {
+      "name": "L_Clavicle",
+      "point": [
+        0.055,
+        0.41,
+        -0.028
+      ],
+      "parent": "Spine02"
+    },
+    {
+      "name": "L_Upperarm",
+      "point": [
+        0.047,
+        0.414,
+        -0.094
+      ],
+      "parent": "L_Clavicle"
+    },
+    {
+      "name": "L_Forearm",
+      "point": [
+        0.044,
+        0.354,
+        -0.149
+      ],
+      "parent": "L_Upperarm"
+    },
+    {
+      "name": "L_Hand",
+      "point": [
+        0.045,
+        0.296,
+        -0.19
+      ],
+      "parent": "L_Forearm"
+    },
+    {
+      "name": "L_HandTip",
+      "point": [
+        0.052,
+        0.26,
+        -0.193
+      ],
+      "parent": "L_Hand"
+    },
+    {
+      "name": "R_Thigh",
+      "point": [
+        0.055,
+        0.263,
+        0.059
+      ],
+      "parent": "Pelvis"
+    },
+    {
+      "name": "R_Calf",
+      "point": [
+        0.065,
+        0.149,
+        0.059
+      ],
+      "parent": "R_Thigh"
+    },
+    {
+      "name": "R_Foot",
+      "point": [
+        0.052,
+        0.045,
+        0.059
+      ],
+      "parent": "R_Calf"
+    },
+    {
+      "name": "R_ToeBase",
+      "point": [
+        0.112,
+        0.023,
+        0.059
+      ],
+      "parent": "R_Foot"
+    },
+    {
+      "name": "R_Clavicle",
+      "point": [
+        0.055,
+        0.41,
+        0.028
+      ],
+      "parent": "Spine02"
+    },
+    {
+      "name": "R_Upperarm",
+      "point": [
+        0.047,
+        0.414,
+        0.094
+      ],
+      "parent": "R_Clavicle"
+    },
+    {
+      "name": "R_Forearm",
+      "point": [
+        0.044,
+        0.354,
+        0.149
+      ],
+      "parent": "R_Upperarm"
+    },
+    {
+      "name": "R_Hand",
+      "point": [
+        0.045,
+        0.296,
+        0.19
+      ],
+      "parent": "R_Forearm"
+    },
+    {
+      "name": "R_HandTip",
+      "point": [
+        0.052,
+        0.26,
+        0.193
+      ],
+      "parent": "R_Hand"
+    },
+    {
+      "name": "Hair_01_01",
+      "point": [
+        -0.075,
+        0.635,
+        -0.24599999999999997
+      ],
+      "parent": "Head"
+    },
+    {
+      "name": "Hair_01_02",
+      "point": [
+        -0.125,
+        0.465,
+        -0.3
+      ],
+      "parent": "Hair_01_01"
+    },
+    {
+      "name": "Hair_01_03",
+      "point": [
+        -0.145,
+        0.3,
+        -0.315
+      ],
+      "parent": "Hair_01_02"
+    },
+    {
+      "name": "Hair_01_Tip",
+      "point": [
+        -0.14,
+        0.145,
+        -0.33
+      ],
+      "parent": "Hair_01_03"
+    },
+    {
+      "name": "Hair_02_01",
+      "point": [
+        -0.075,
+        0.635,
+        -0.1394
+      ],
+      "parent": "Head"
+    },
+    {
+      "name": "Hair_02_02",
+      "point": [
+        -0.125,
+        0.465,
+        -0.17
+      ],
+      "parent": "Hair_02_01"
+    },
+    {
+      "name": "Hair_02_03",
+      "point": [
+        -0.145,
+        0.3,
+        -0.17850000000000002
+      ],
+      "parent": "Hair_02_02"
+    },
+    {
+      "name": "Hair_02_Tip",
+      "point": [
+        -0.14,
+        0.145,
+        -0.18700000000000003
+      ],
+      "parent": "Hair_02_03"
+    },
+    {
+      "name": "Hair_03_01",
+      "point": [
+        -0.075,
+        0.635,
+        -0.045099999999999994
+      ],
+      "parent": "Head"
+    },
+    {
+      "name": "Hair_03_02",
+      "point": [
+        -0.125,
+        0.465,
+        -0.055
+      ],
+      "parent": "Hair_03_01"
+    },
+    {
+      "name": "Hair_03_03",
+      "point": [
+        -0.145,
+        0.3,
+        -0.05775
+      ],
+      "parent": "Hair_03_02"
+    },
+    {
+      "name": "Hair_03_Tip",
+      "point": [
+        -0.14,
+        0.145,
+        -0.060500000000000005
+      ],
+      "parent": "Hair_03_03"
+    },
+    {
+      "name": "Hair_04_01",
+      "point": [
+        -0.075,
+        0.635,
+        0.045099999999999994
+      ],
+      "parent": "Head"
+    },
+    {
+      "name": "Hair_04_02",
+      "point": [
+        -0.125,
+        0.465,
+        0.055
+      ],
+      "parent": "Hair_04_01"
+    },
+    {
+      "name": "Hair_04_03",
+      "point": [
+        -0.145,
+        0.3,
+        0.05775
+      ],
+      "parent": "Hair_04_02"
+    },
+    {
+      "name": "Hair_04_Tip",
+      "point": [
+        -0.14,
+        0.145,
+        0.060500000000000005
+      ],
+      "parent": "Hair_04_03"
+    },
+    {
+      "name": "Hair_05_01",
+      "point": [
+        -0.075,
+        0.635,
+        0.1394
+      ],
+      "parent": "Head"
+    },
+    {
+      "name": "Hair_05_02",
+      "point": [
+        -0.125,
+        0.465,
+        0.17
+      ],
+      "parent": "Hair_05_01"
+    },
+    {
+      "name": "Hair_05_03",
+      "point": [
+        -0.145,
+        0.3,
+        0.17850000000000002
+      ],
+      "parent": "Hair_05_02"
+    },
+    {
+      "name": "Hair_05_Tip",
+      "point": [
+        -0.14,
+        0.145,
+        0.18700000000000003
+      ],
+      "parent": "Hair_05_03"
+    },
+    {
+      "name": "Hair_06_01",
+      "point": [
+        -0.075,
+        0.635,
+        0.24599999999999997
+      ],
+      "parent": "Head"
+    },
+    {
+      "name": "Hair_06_02",
+      "point": [
+        -0.125,
+        0.465,
+        0.3
+      ],
+      "parent": "Hair_06_01"
+    },
+    {
+      "name": "Hair_06_03",
+      "point": [
+        -0.145,
+        0.3,
+        0.315
+      ],
+      "parent": "Hair_06_02"
+    },
+    {
+      "name": "Hair_06_Tip",
+      "point": [
+        -0.14,
+        0.145,
+        0.33
+      ],
+      "parent": "Hair_06_03"
+    },
+    {
+      "name": "FaceHair_L_01",
+      "point": [
+        0.08,
+        0.61,
+        -0.155
+      ],
+      "parent": "Head"
+    },
+    {
+      "name": "FaceHair_L_02",
+      "point": [
+        0.085,
+        0.49,
+        -0.157
+      ],
+      "parent": "FaceHair_L_01"
+    },
+    {
+      "name": "FaceHair_L_03",
+      "point": [
+        0.078,
+        0.397,
+        -0.155
+      ],
+      "parent": "FaceHair_L_02"
+    },
+    {
+      "name": "FaceHair_R_01",
+      "point": [
+        0.08,
+        0.61,
+        0.155
+      ],
+      "parent": "Head"
+    },
+    {
+      "name": "FaceHair_R_02",
+      "point": [
+        0.085,
+        0.49,
+        0.157
+      ],
+      "parent": "FaceHair_R_01"
+    },
+    {
+      "name": "FaceHair_R_03",
+      "point": [
+        0.078,
+        0.397,
+        0.155
+      ],
+      "parent": "FaceHair_R_02"
+    },
+    {
+      "name": "Skirt_01_01",
+      "point": [
+        0.105,
+        0.322,
+        0.002
+      ],
+      "parent": "Pelvis"
+    },
+    {
+      "name": "Skirt_01_02",
+      "point": [
+        0.175,
+        0.225,
+        0.002
+      ],
+      "parent": "Skirt_01_01"
+    },
+    {
+      "name": "Skirt_01_03",
+      "point": [
+        0.235,
+        0.145,
+        0.002
+      ],
+      "parent": "Skirt_01_02"
+    },
+    {
+      "name": "Skirt_01_Tip",
+      "point": [
+        0.25,
+        0.102,
+        0.002
+      ],
+      "parent": "Skirt_01_03"
+    },
+    {
+      "name": "Skirt_02_01",
+      "point": [
+        0.08742640687119285,
+        0.322,
+        0.05856854249492381
+      ],
+      "parent": "Pelvis"
+    },
+    {
+      "name": "Skirt_02_02",
+      "point": [
+        0.13692388155425117,
+        0.225,
+        0.11513708498984762
+      ],
+      "parent": "Skirt_02_01"
+    },
+    {
+      "name": "Skirt_02_03",
+      "point": [
+        0.17935028842544404,
+        0.145,
+        0.16463455967290594
+      ],
+      "parent": "Skirt_02_02"
+    },
+    {
+      "name": "Skirt_02_Tip",
+      "point": [
+        0.18995689014324224,
+        0.102,
+        0.1787766952966369
+      ],
+      "parent": "Skirt_02_03"
+    },
+    {
+      "name": "Skirt_03_01",
+      "point": [
+        0.045000000000000005,
+        0.322,
+        0.082
+      ],
+      "parent": "Pelvis"
+    },
+    {
+      "name": "Skirt_03_02",
+      "point": [
+        0.045000000000000005,
+        0.225,
+        0.162
+      ],
+      "parent": "Skirt_03_01"
+    },
+    {
+      "name": "Skirt_03_03",
+      "point": [
+        0.04500000000000001,
+        0.145,
+        0.232
+      ],
+      "parent": "Skirt_03_02"
+    },
+    {
+      "name": "Skirt_03_Tip",
+      "point": [
+        0.04500000000000001,
+        0.102,
+        0.252
+      ],
+      "parent": "Skirt_03_03"
+    },
+    {
+      "name": "Skirt_04_01",
+      "point": [
+        0.0025735931288071515,
+        0.322,
+        0.05856854249492381
+      ],
+      "parent": "Pelvis"
+    },
+    {
+      "name": "Skirt_04_02",
+      "point": [
+        -0.04692388155425117,
+        0.225,
+        0.11513708498984762
+      ],
+      "parent": "Skirt_04_01"
+    },
+    {
+      "name": "Skirt_04_03",
+      "point": [
+        -0.08935028842544403,
+        0.145,
+        0.16463455967290594
+      ],
+      "parent": "Skirt_04_02"
+    },
+    {
+      "name": "Skirt_04_Tip",
+      "point": [
+        -0.09995689014324223,
+        0.102,
+        0.1787766952966369
+      ],
+      "parent": "Skirt_04_03"
+    },
+    {
+      "name": "Skirt_05_01",
+      "point": [
+        -0.015,
+        0.322,
+        0.00200000000000001
+      ],
+      "parent": "Pelvis"
+    },
+    {
+      "name": "Skirt_05_02",
+      "point": [
+        -0.085,
+        0.225,
+        0.0020000000000000196
+      ],
+      "parent": "Skirt_05_01"
+    },
+    {
+      "name": "Skirt_05_03",
+      "point": [
+        -0.14500000000000002,
+        0.145,
+        0.0020000000000000282
+      ],
+      "parent": "Skirt_05_02"
+    },
+    {
+      "name": "Skirt_05_Tip",
+      "point": [
+        -0.15999999999999998,
+        0.102,
+        0.002000000000000031
+      ],
+      "parent": "Skirt_05_03"
+    },
+    {
+      "name": "Skirt_06_01",
+      "point": [
+        0.0025735931288071376,
+        0.322,
+        -0.054568542494923794
+      ],
+      "parent": "Pelvis"
+    },
+    {
+      "name": "Skirt_06_02",
+      "point": [
+        -0.0469238815542512,
+        0.225,
+        -0.11113708498984759
+      ],
+      "parent": "Skirt_06_01"
+    },
+    {
+      "name": "Skirt_06_03",
+      "point": [
+        -0.08935028842544405,
+        0.145,
+        -0.1606345596729059
+      ],
+      "parent": "Skirt_06_02"
+    },
+    {
+      "name": "Skirt_06_Tip",
+      "point": [
+        -0.09995689014324226,
+        0.102,
+        -0.17477669529663686
+      ],
+      "parent": "Skirt_06_03"
+    },
+    {
+      "name": "Skirt_07_01",
+      "point": [
+        0.044999999999999984,
+        0.322,
+        -0.078
+      ],
+      "parent": "Pelvis"
+    },
+    {
+      "name": "Skirt_07_02",
+      "point": [
+        0.04499999999999998,
+        0.225,
+        -0.158
+      ],
+      "parent": "Skirt_07_01"
+    },
+    {
+      "name": "Skirt_07_03",
+      "point": [
+        0.044999999999999964,
+        0.145,
+        -0.228
+      ],
+      "parent": "Skirt_07_02"
+    },
+    {
+      "name": "Skirt_07_Tip",
+      "point": [
+        0.044999999999999964,
+        0.102,
+        -0.248
+      ],
+      "parent": "Skirt_07_03"
+    },
+    {
+      "name": "Skirt_08_01",
+      "point": [
+        0.08742640687119284,
+        0.322,
+        -0.054568542494923815
+      ],
+      "parent": "Pelvis"
+    },
+    {
+      "name": "Skirt_08_02",
+      "point": [
+        0.13692388155425117,
+        0.225,
+        -0.11113708498984763
+      ],
+      "parent": "Skirt_08_01"
+    },
+    {
+      "name": "Skirt_08_03",
+      "point": [
+        0.17935028842544398,
+        0.145,
+        -0.16063455967290596
+      ],
+      "parent": "Skirt_08_02"
+    },
+    {
+      "name": "Skirt_08_Tip",
+      "point": [
+        0.18995689014324219,
+        0.102,
+        -0.17477669529663692
+      ],
+      "parent": "Skirt_08_03"
+    },
+    {
+      "name": "Tail_01",
+      "point": [
+        -0.052,
+        0.225,
+        -0.155
+      ],
+      "parent": "Pelvis"
+    },
+    {
+      "name": "Tail_02",
+      "point": [
+        -0.065,
+        0.239,
+        -0.242
+      ],
+      "parent": "Tail_01"
+    },
+    {
+      "name": "Tail_Fluke",
+      "point": [
+        -0.068,
+        0.245,
+        -0.307
+      ],
+      "parent": "Tail_02"
+    },
+    {
+      "name": "Tail_Tip",
+      "point": [
+        -0.07,
+        0.275,
+        -0.365
+      ],
+      "parent": "Tail_Fluke"
+    }
+  ],
+  "joint_node_base": 63,
+  "hair_chains": [
+    {
+      "kind": "hair",
+      "bones": [
+        "Hair_01_01",
+        "Hair_01_02",
+        "Hair_01_03",
+        "Hair_01_Tip"
+      ],
+      "root": "Hair_01_01",
+      "end": "Hair_01_Tip",
+      "points": [
+        [
+          -0.075,
+          0.635,
+          -0.24599999999999997
+        ],
+        [
+          -0.125,
+          0.465,
+          -0.3
+        ],
+        [
+          -0.145,
+          0.3,
+          -0.315
+        ],
+        [
+          -0.14,
+          0.145,
+          -0.33
+        ]
+      ]
+    },
+    {
+      "kind": "hair",
+      "bones": [
+        "Hair_02_01",
+        "Hair_02_02",
+        "Hair_02_03",
+        "Hair_02_Tip"
+      ],
+      "root": "Hair_02_01",
+      "end": "Hair_02_Tip",
+      "points": [
+        [
+          -0.075,
+          0.635,
+          -0.1394
+        ],
+        [
+          -0.125,
+          0.465,
+          -0.17
+        ],
+        [
+          -0.145,
+          0.3,
+          -0.17850000000000002
+        ],
+        [
+          -0.14,
+          0.145,
+          -0.18700000000000003
+        ]
+      ]
+    },
+    {
+      "kind": "hair",
+      "bones": [
+        "Hair_03_01",
+        "Hair_03_02",
+        "Hair_03_03",
+        "Hair_03_Tip"
+      ],
+      "root": "Hair_03_01",
+      "end": "Hair_03_Tip",
+      "points": [
+        [
+          -0.075,
+          0.635,
+          -0.045099999999999994
+        ],
+        [
+          -0.125,
+          0.465,
+          -0.055
+        ],
+        [
+          -0.145,
+          0.3,
+          -0.05775
+        ],
+        [
+          -0.14,
+          0.145,
+          -0.060500000000000005
+        ]
+      ]
+    },
+    {
+      "kind": "hair",
+      "bones": [
+        "Hair_04_01",
+        "Hair_04_02",
+        "Hair_04_03",
+        "Hair_04_Tip"
+      ],
+      "root": "Hair_04_01",
+      "end": "Hair_04_Tip",
+      "points": [
+        [
+          -0.075,
+          0.635,
+          0.045099999999999994
+        ],
+        [
+          -0.125,
+          0.465,
+          0.055
+        ],
+        [
+          -0.145,
+          0.3,
+          0.05775
+        ],
+        [
+          -0.14,
+          0.145,
+          0.060500000000000005
+        ]
+      ]
+    },
+    {
+      "kind": "hair",
+      "bones": [
+        "Hair_05_01",
+        "Hair_05_02",
+        "Hair_05_03",
+        "Hair_05_Tip"
+      ],
+      "root": "Hair_05_01",
+      "end": "Hair_05_Tip",
+      "points": [
+        [
+          -0.075,
+          0.635,
+          0.1394
+        ],
+        [
+          -0.125,
+          0.465,
+          0.17
+        ],
+        [
+          -0.145,
+          0.3,
+          0.17850000000000002
+        ],
+        [
+          -0.14,
+          0.145,
+          0.18700000000000003
+        ]
+      ]
+    },
+    {
+      "kind": "hair",
+      "bones": [
+        "Hair_06_01",
+        "Hair_06_02",
+        "Hair_06_03",
+        "Hair_06_Tip"
+      ],
+      "root": "Hair_06_01",
+      "end": "Hair_06_Tip",
+      "points": [
+        [
+          -0.075,
+          0.635,
+          0.24599999999999997
+        ],
+        [
+          -0.125,
+          0.465,
+          0.3
+        ],
+        [
+          -0.145,
+          0.3,
+          0.315
+        ],
+        [
+          -0.14,
+          0.145,
+          0.33
+        ]
+      ]
+    },
+    {
+      "kind": "face_hair",
+      "bones": [
+        "FaceHair_L_01",
+        "FaceHair_L_02",
+        "FaceHair_L_03"
+      ],
+      "root": "FaceHair_L_01",
+      "end": "FaceHair_L_03",
+      "points": [
+        [
+          0.08,
+          0.61,
+          -0.155
+        ],
+        [
+          0.085,
+          0.49,
+          -0.157
+        ],
+        [
+          0.078,
+          0.397,
+          -0.155
+        ]
+      ]
+    },
+    {
+      "kind": "face_hair",
+      "bones": [
+        "FaceHair_R_01",
+        "FaceHair_R_02",
+        "FaceHair_R_03"
+      ],
+      "root": "FaceHair_R_01",
+      "end": "FaceHair_R_03",
+      "points": [
+        [
+          0.08,
+          0.61,
+          0.155
+        ],
+        [
+          0.085,
+          0.49,
+          0.157
+        ],
+        [
+          0.078,
+          0.397,
+          0.155
+        ]
+      ]
+    }
+  ],
+  "skirt_chains": [
+    {
+      "kind": "skirt",
+      "bones": [
+        "Skirt_01_01",
+        "Skirt_01_02",
+        "Skirt_01_03",
+        "Skirt_01_Tip"
+      ],
+      "root": "Skirt_01_01",
+      "end": "Skirt_01_Tip",
+      "angle": 0.0,
+      "points": [
+        [
+          0.105,
+          0.322,
+          0.002
+        ],
+        [
+          0.175,
+          0.225,
+          0.002
+        ],
+        [
+          0.235,
+          0.145,
+          0.002
+        ],
+        [
+          0.25,
+          0.102,
+          0.002
+        ]
+      ]
+    },
+    {
+      "kind": "skirt",
+      "bones": [
+        "Skirt_02_01",
+        "Skirt_02_02",
+        "Skirt_02_03",
+        "Skirt_02_Tip"
+      ],
+      "root": "Skirt_02_01",
+      "end": "Skirt_02_Tip",
+      "angle": 0.7853981633974483,
+      "points": [
+        [
+          0.08742640687119285,
+          0.322,
+          0.05856854249492381
+        ],
+        [
+          0.13692388155425117,
+          0.225,
+          0.11513708498984762
+        ],
+        [
+          0.17935028842544404,
+          0.145,
+          0.16463455967290594
+        ],
+        [
+          0.18995689014324224,
+          0.102,
+          0.1787766952966369
+        ]
+      ]
+    },
+    {
+      "kind": "skirt",
+      "bones": [
+        "Skirt_03_01",
+        "Skirt_03_02",
+        "Skirt_03_03",
+        "Skirt_03_Tip"
+      ],
+      "root": "Skirt_03_01",
+      "end": "Skirt_03_Tip",
+      "angle": 1.5707963267948966,
+      "points": [
+        [
+          0.045000000000000005,
+          0.322,
+          0.082
+        ],
+        [
+          0.045000000000000005,
+          0.225,
+          0.162
+        ],
+        [
+          0.04500000000000001,
+          0.145,
+          0.232
+        ],
+        [
+          0.04500000000000001,
+          0.102,
+          0.252
+        ]
+      ]
+    },
+    {
+      "kind": "skirt",
+      "bones": [
+        "Skirt_04_01",
+        "Skirt_04_02",
+        "Skirt_04_03",
+        "Skirt_04_Tip"
+      ],
+      "root": "Skirt_04_01",
+      "end": "Skirt_04_Tip",
+      "angle": 2.356194490192345,
+      "points": [
+        [
+          0.0025735931288071515,
+          0.322,
+          0.05856854249492381
+        ],
+        [
+          -0.04692388155425117,
+          0.225,
+          0.11513708498984762
+        ],
+        [
+          -0.08935028842544403,
+          0.145,
+          0.16463455967290594
+        ],
+        [
+          -0.09995689014324223,
+          0.102,
+          0.1787766952966369
+        ]
+      ]
+    },
+    {
+      "kind": "skirt",
+      "bones": [
+        "Skirt_05_01",
+        "Skirt_05_02",
+        "Skirt_05_03",
+        "Skirt_05_Tip"
+      ],
+      "root": "Skirt_05_01",
+      "end": "Skirt_05_Tip",
+      "angle": 3.141592653589793,
+      "points": [
+        [
+          -0.015,
+          0.322,
+          0.00200000000000001
+        ],
+        [
+          -0.085,
+          0.225,
+          0.0020000000000000196
+        ],
+        [
+          -0.14500000000000002,
+          0.145,
+          0.0020000000000000282
+        ],
+        [
+          -0.15999999999999998,
+          0.102,
+          0.002000000000000031
+        ]
+      ]
+    },
+    {
+      "kind": "skirt",
+      "bones": [
+        "Skirt_06_01",
+        "Skirt_06_02",
+        "Skirt_06_03",
+        "Skirt_06_Tip"
+      ],
+      "root": "Skirt_06_01",
+      "end": "Skirt_06_Tip",
+      "angle": 3.9269908169872414,
+      "points": [
+        [
+          0.0025735931288071376,
+          0.322,
+          -0.054568542494923794
+        ],
+        [
+          -0.0469238815542512,
+          0.225,
+          -0.11113708498984759
+        ],
+        [
+          -0.08935028842544405,
+          0.145,
+          -0.1606345596729059
+        ],
+        [
+          -0.09995689014324226,
+          0.102,
+          -0.17477669529663686
+        ]
+      ]
+    },
+    {
+      "kind": "skirt",
+      "bones": [
+        "Skirt_07_01",
+        "Skirt_07_02",
+        "Skirt_07_03",
+        "Skirt_07_Tip"
+      ],
+      "root": "Skirt_07_01",
+      "end": "Skirt_07_Tip",
+      "angle": 4.71238898038469,
+      "points": [
+        [
+          0.044999999999999984,
+          0.322,
+          -0.078
+        ],
+        [
+          0.04499999999999998,
+          0.225,
+          -0.158
+        ],
+        [
+          0.044999999999999964,
+          0.145,
+          -0.228
+        ],
+        [
+          0.044999999999999964,
+          0.102,
+          -0.248
+        ]
+      ]
+    },
+    {
+      "kind": "skirt",
+      "bones": [
+        "Skirt_08_01",
+        "Skirt_08_02",
+        "Skirt_08_03",
+        "Skirt_08_Tip"
+      ],
+      "root": "Skirt_08_01",
+      "end": "Skirt_08_Tip",
+      "angle": 5.497787143782138,
+      "points": [
+        [
+          0.08742640687119284,
+          0.322,
+          -0.054568542494923815
+        ],
+        [
+          0.13692388155425117,
+          0.225,
+          -0.11113708498984763
+        ],
+        [
+          0.17935028842544398,
+          0.145,
+          -0.16063455967290596
+        ],
+        [
+          0.18995689014324219,
+          0.102,
+          -0.17477669529663692
+        ]
+      ]
+    }
+  ],
+  "part_weight_audit": [
+    {
+      "part": 0,
+      "vertices": 118492,
+      "category": "garment_or_covered_body",
+      "used_bones": [
+        "Skirt_01_03",
+        "Skirt_02_02",
+        "Skirt_02_03",
+        "Skirt_03_02",
+        "Skirt_03_03",
+        "Skirt_04_02",
+        "Skirt_04_03",
+        "Skirt_05_02",
+        "Skirt_05_03",
+        "Skirt_06_02",
+        "Skirt_06_03",
+        "Skirt_07_02",
+        "Skirt_07_03",
+        "Skirt_08_02",
+        "Skirt_08_03"
+      ]
+    },
+    {
+      "part": 1,
+      "vertices": 125214,
+      "category": "garment_or_covered_body",
+      "used_bones": [
+        "Pelvis",
+        "Skirt_01_01",
+        "Skirt_01_02",
+        "Skirt_01_03",
+        "Skirt_02_01",
+        "Skirt_02_02",
+        "Skirt_02_03",
+        "Skirt_03_01",
+        "Skirt_03_02",
+        "Skirt_03_03",
+        "Skirt_04_01",
+        "Skirt_04_02",
+        "Skirt_04_03",
+        "Skirt_05_01",
+        "Skirt_05_02",
+        "Skirt_05_03",
+        "Skirt_06_01",
+        "Skirt_06_02",
+        "Skirt_06_03",
+        "Skirt_07_01",
+        "Skirt_07_02",
+        "Skirt_07_03",
+        "Skirt_08_01",
+        "Skirt_08_02",
+        "Skirt_08_03",
+        "Spine02",
+        "Waist"
+      ]
+    },
+    {
+      "part": 2,
+      "vertices": 25458,
+      "category": "rigid_head_face_or_headpiece",
+      "used_bones": [
+        "Head"
+      ]
+    },
+    {
+      "part": 3,
+      "vertices": 29176,
+      "category": "rigid_head_face_or_headpiece",
+      "used_bones": [
+        "Head"
+      ]
+    },
+    {
+      "part": 4,
+      "vertices": 12458,
+      "category": "sleeve_or_internal_arm",
+      "used_bones": [
+        "R_Clavicle",
+        "R_Forearm",
+        "R_Upperarm"
+      ]
+    },
+    {
+      "part": 5,
+      "vertices": 12129,
+      "category": "face_side_hair_only",
+      "used_bones": [
+        "FaceHair_R_01",
+        "FaceHair_R_02",
+        "Head"
+      ]
+    },
+    {
+      "part": 6,
+      "vertices": 8745,
+      "category": "garment_or_covered_body",
+      "used_bones": [
+        "Skirt_01_02",
+        "Skirt_01_03",
+        "Skirt_02_02",
+        "Skirt_02_03",
+        "Skirt_03_02",
+        "Skirt_03_03"
+      ]
+    },
+    {
+      "part": 7,
+      "vertices": 24264,
+      "category": "garment_or_covered_body",
+      "used_bones": [
+        "Skirt_01_03",
+        "Skirt_02_02",
+        "Skirt_02_03",
+        "Skirt_03_02",
+        "Skirt_03_03",
+        "Skirt_04_02",
+        "Skirt_04_03",
+        "Skirt_05_02",
+        "Skirt_05_03",
+        "Skirt_06_02",
+        "Skirt_06_03",
+        "Skirt_07_02",
+        "Skirt_07_03",
+        "Skirt_08_02",
+        "Skirt_08_03"
+      ]
+    },
+    {
+      "part": 8,
+      "vertices": 14256,
+      "category": "long_hair_only",
+      "used_bones": [
+        "Hair_02_01",
+        "Hair_02_02",
+        "Hair_03_01",
+        "Hair_03_02",
+        "Hair_04_01",
+        "Hair_04_02",
+        "Hair_04_03",
+        "Hair_05_01",
+        "Hair_05_02",
+        "Hair_05_03",
+        "Hair_06_01",
+        "Hair_06_02",
+        "Head"
+      ]
+    },
+    {
+      "part": 9,
+      "vertices": 13568,
+      "category": "long_hair_only",
+      "used_bones": [
+        "Hair_05_01",
+        "Hair_05_02",
+        "Hair_05_03",
+        "Hair_06_01",
+        "Hair_06_02",
+        "Hair_06_03",
+        "Head"
+      ]
+    },
+    {
+      "part": 10,
+      "vertices": 13199,
+      "category": "rigid_head_face_or_headpiece",
+      "used_bones": [
+        "Head"
+      ]
+    },
+    {
+      "part": 11,
+      "vertices": 12800,
+      "category": "sleeve_or_internal_arm",
+      "used_bones": [
+        "L_Clavicle",
+        "L_Forearm",
+        "L_Upperarm"
+      ]
+    },
+    {
+      "part": 12,
+      "vertices": 64265,
+      "category": "rigid_head_face_or_headpiece",
+      "used_bones": [
+        "Head"
+      ]
+    },
+    {
+      "part": 13,
+      "vertices": 11650,
+      "category": "face_side_hair_only",
+      "used_bones": [
+        "FaceHair_L_01",
+        "FaceHair_L_02",
+        "Head"
+      ]
+    },
+    {
+      "part": 14,
+      "vertices": 11803,
+      "category": "rigid_head_face_or_headpiece",
+      "used_bones": [
+        "Head"
+      ]
+    },
+    {
+      "part": 15,
+      "vertices": 9984,
+      "category": "rigid_head_face_or_headpiece",
+      "used_bones": [
+        "Head"
+      ]
+    },
+    {
+      "part": 16,
+      "vertices": 12102,
+      "category": "rigid_head_face_or_headpiece",
+      "used_bones": [
+        "Head"
+      ]
+    },
+    {
+      "part": 17,
+      "vertices": 10064,
+      "category": "cuff",
+      "used_bones": [
+        "L_Forearm"
+      ]
+    },
+    {
+      "part": 18,
+      "vertices": 6590,
+      "category": "rigid_head_face_or_headpiece",
+      "used_bones": [
+        "Head"
+      ]
+    },
+    {
+      "part": 19,
+      "vertices": 13097,
+      "category": "long_hair_only",
+      "used_bones": [
+        "Hair_01_01",
+        "Hair_01_02",
+        "Hair_01_03",
+        "Hair_02_01",
+        "Hair_02_02",
+        "Hair_02_03",
+        "Head"
+      ]
+    },
+    {
+      "part": 20,
+      "vertices": 7807,
+      "category": "rigid_shoe",
+      "used_bones": [
+        "R_Foot"
+      ]
+    },
+    {
+      "part": 21,
+      "vertices": 6265,
+      "category": "garment_or_covered_body",
+      "used_bones": [
+        "Spine02"
+      ]
+    },
+    {
+      "part": 22,
+      "vertices": 49454,
+      "category": "long_hair_only",
+      "used_bones": [
+        "Hair_01_01",
+        "Hair_01_02",
+        "Hair_01_03",
+        "Hair_02_01",
+        "Hair_02_02",
+        "Hair_02_03",
+        "Hair_03_01",
+        "Hair_03_02",
+        "Hair_03_03",
+        "Head"
+      ]
+    },
+    {
+      "part": 23,
+      "vertices": 50719,
+      "category": "long_hair_only",
+      "used_bones": [
+        "Hair_01_01",
+        "Hair_01_02",
+        "Hair_01_03",
+        "Hair_02_01",
+        "Hair_02_02",
+        "Hair_02_03",
+        "Hair_03_01",
+        "Hair_03_02",
+        "Hair_03_03",
+        "Hair_04_01",
+        "Hair_04_02",
+        "Hair_04_03"
+      ]
+    },
+    {
+      "part": 24,
+      "vertices": 25185,
+      "category": "rigid_head_face_or_headpiece",
+      "used_bones": [
+        "Head"
+      ]
+    },
+    {
+      "part": 25,
+      "vertices": 14057,
+      "category": "rigid_head_face_or_headpiece",
+      "used_bones": [
+        "Head"
+      ]
+    },
+    {
+      "part": 26,
+      "vertices": 10844,
+      "category": "garment_or_covered_body",
+      "used_bones": [
+        "Spine02",
+        "Waist"
+      ]
+    },
+    {
+      "part": 27,
+      "vertices": 10501,
+      "category": "garment_or_covered_body",
+      "used_bones": [
+        "Spine02",
+        "Waist"
+      ]
+    },
+    {
+      "part": 28,
+      "vertices": 10153,
+      "category": "cuff",
+      "used_bones": [
+        "R_Forearm"
+      ]
+    },
+    {
+      "part": 29,
+      "vertices": 8612,
+      "category": "garment_or_covered_body",
+      "used_bones": [
+        "Skirt_01_02",
+        "Skirt_01_03",
+        "Skirt_07_02",
+        "Skirt_07_03",
+        "Skirt_08_02",
+        "Skirt_08_03"
+      ]
+    },
+    {
+      "part": 30,
+      "vertices": 8475,
+      "category": "rigid_shoe",
+      "used_bones": [
+        "L_Foot"
+      ]
+    },
+    {
+      "part": 31,
+      "vertices": 6369,
+      "category": "rigid_head_face_or_headpiece",
+      "used_bones": [
+        "Head"
+      ]
+    },
+    {
+      "part": 32,
+      "vertices": 6479,
+      "category": "leg",
+      "used_bones": [
+        "L_Calf",
+        "L_Foot",
+        "L_Thigh"
+      ]
+    },
+    {
+      "part": 33,
+      "vertices": 6305,
+      "category": "leg",
+      "used_bones": [
+        "R_Calf",
+        "R_Foot",
+        "R_Thigh"
+      ]
+    },
+    {
+      "part": 34,
+      "vertices": 52222,
+      "category": "long_hair_only",
+      "used_bones": [
+        "Hair_03_01",
+        "Hair_03_02",
+        "Hair_03_03",
+        "Hair_04_01",
+        "Hair_04_02",
+        "Hair_04_03",
+        "Hair_05_01",
+        "Hair_05_02",
+        "Hair_05_03",
+        "Hair_06_01",
+        "Hair_06_02",
+        "Hair_06_03"
+      ]
+    },
+    {
+      "part": 35,
+      "vertices": 5579,
+      "category": "rigid_head_face_or_headpiece",
+      "used_bones": [
+        "Head"
+      ]
+    },
+    {
+      "part": 36,
+      "vertices": 5040,
+      "category": "rigid_shoe",
+      "used_bones": [
+        "R_Foot"
+      ]
+    },
+    {
+      "part": 37,
+      "vertices": 4848,
+      "category": "rigid_mitten_hand",
+      "used_bones": [
+        "R_Hand"
+      ]
+    },
+    {
+      "part": 38,
+      "vertices": 4640,
+      "category": "rigid_shoe",
+      "used_bones": [
+        "L_Foot"
+      ]
+    },
+    {
+      "part": 39,
+      "vertices": 4642,
+      "category": "rigid_mitten_hand",
+      "used_bones": [
+        "L_Hand"
+      ]
+    },
+    {
+      "part": 40,
+      "vertices": 4652,
+      "category": "garment_or_covered_body",
+      "used_bones": [
+        "Spine02",
+        "Waist"
+      ]
+    },
+    {
+      "part": 41,
+      "vertices": 4698,
+      "category": "garment_or_covered_body",
+      "used_bones": [
+        "Skirt_05_02",
+        "Skirt_05_03",
+        "Skirt_06_02",
+        "Skirt_06_03",
+        "Skirt_07_02",
+        "Skirt_07_03"
+      ]
+    },
+    {
+      "part": 42,
+      "vertices": 4116,
+      "category": "garment_or_covered_body",
+      "used_bones": [
+        "Spine02"
+      ]
+    },
+    {
+      "part": 43,
+      "vertices": 3657,
+      "category": "garment_or_covered_body",
+      "used_bones": [
+        "Pelvis",
+        "Skirt_01_01",
+        "Skirt_01_02",
+        "Skirt_01_03",
+        "Skirt_02_01",
+        "Skirt_02_02",
+        "Skirt_02_03",
+        "Skirt_08_01",
+        "Skirt_08_02",
+        "Skirt_08_03"
+      ]
+    },
+    {
+      "part": 44,
+      "vertices": 3305,
+      "category": "neck_collar",
+      "used_bones": [
+        "NeckTwist01",
+        "Spine02"
+      ]
+    },
+    {
+      "part": 45,
+      "vertices": 24187,
+      "category": "garment_or_covered_body",
+      "used_bones": [
+        "Pelvis",
+        "Skirt_01_01",
+        "Skirt_01_02",
+        "Skirt_01_03",
+        "Skirt_02_01",
+        "Skirt_02_02",
+        "Skirt_02_03",
+        "Skirt_03_01",
+        "Skirt_03_02",
+        "Skirt_07_01",
+        "Skirt_07_02",
+        "Skirt_08_01",
+        "Skirt_08_02",
+        "Skirt_08_03",
+        "Spine02",
+        "Waist"
+      ]
+    },
+    {
+      "part": 46,
+      "vertices": 3447,
+      "category": "rigid_head_face_or_headpiece",
+      "used_bones": [
+        "Head"
+      ]
+    },
+    {
+      "part": 47,
+      "vertices": 3128,
+      "category": "rigid_head_face_or_headpiece",
+      "used_bones": [
+        "Head"
+      ]
+    },
+    {
+      "part": 48,
+      "vertices": 2907,
+      "category": "garment_or_covered_body",
+      "used_bones": [
+        "Skirt_01_02",
+        "Skirt_01_03",
+        "Skirt_02_02",
+        "Skirt_02_03"
+      ]
+    },
+    {
+      "part": 49,
+      "vertices": 2324,
+      "category": "garment_or_covered_body",
+      "used_bones": [
+        "Skirt_07_02",
+        "Skirt_07_03",
+        "Skirt_08_02",
+        "Skirt_08_03"
+      ]
+    },
+    {
+      "part": 50,
+      "vertices": 2022,
+      "category": "garment_or_covered_body",
+      "used_bones": [
+        "Skirt_01_02",
+        "Skirt_01_03",
+        "Skirt_08_02",
+        "Skirt_08_03"
+      ]
+    },
+    {
+      "part": 51,
+      "vertices": 1687,
+      "category": "rigid_head_face_or_headpiece",
+      "used_bones": [
+        "Head"
+      ]
+    },
+    {
+      "part": 52,
+      "vertices": 1608,
+      "category": "rigid_head_face_or_headpiece",
+      "used_bones": [
+        "Head"
+      ]
+    },
+    {
+      "part": 53,
+      "vertices": 1645,
+      "category": "garment_or_covered_body",
+      "used_bones": [
+        "Skirt_07_02",
+        "Skirt_07_03",
+        "Skirt_08_02",
+        "Skirt_08_03"
+      ]
+    },
+    {
+      "part": 54,
+      "vertices": 1513,
+      "category": "garment_or_covered_body",
+      "used_bones": [
+        "Skirt_02_02",
+        "Skirt_02_03",
+        "Skirt_03_02",
+        "Skirt_03_03"
+      ]
+    },
+    {
+      "part": 55,
+      "vertices": 44191,
+      "category": "long_hair_only",
+      "used_bones": [
+        "Hair_04_01",
+        "Hair_04_02",
+        "Hair_05_01",
+        "Hair_05_02",
+        "Hair_05_03",
+        "Hair_06_01",
+        "Hair_06_02",
+        "Hair_06_03",
+        "Head"
+      ]
+    },
+    {
+      "part": 56,
+      "vertices": 31392,
+      "category": "rigid_head_face_or_headpiece",
+      "used_bones": [
+        "Head"
+      ]
+    },
+    {
+      "part": 57,
+      "vertices": 42524,
+      "category": "rigid_head_face_or_headpiece",
+      "used_bones": [
+        "Head"
+      ]
+    },
+    {
+      "part": 58,
+      "vertices": 19000,
+      "category": "tail_only",
+      "used_bones": [
+        "Tail_01",
+        "Tail_02",
+        "Tail_Fluke"
+      ]
+    },
+    {
+      "part": 59,
+      "vertices": 114,
+      "category": "garment_or_covered_body",
+      "new_hidden_geometry": true
+    },
+    {
+      "part": 60,
+      "vertices": 98,
+      "category": "leg",
+      "new_hidden_geometry": true
+    },
+    {
+      "part": 61,
+      "vertices": 98,
+      "category": "leg",
+      "new_hidden_geometry": true
+    }
+  ],
+  "forward_axis": "+X",
+  "up_axis": "+Y",
+  "rest_height": 0.979,
+  "joint_reference": "User supplied opaque bodysuit structural candidate; joints adapted to actual mesh"
+}

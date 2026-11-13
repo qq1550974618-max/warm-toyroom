@@ -1,0 +1,97 @@
+[gd_scene format=3]
+
+[ext_resource type="ArrayMesh" path="res://room_kit/resources/wicker_basket_WickerBasket_Model_Detail_Basket_inner_shade_001.res" id="1_2mvj0"]
+[ext_resource type="Material" path="res://room_kit/materials/legacy_basket_inner_shade.tres" id="2_6qnvr"]
+[ext_resource type="Shape3D" path="res://room_kit/resources/wicker_basket_WickerBasket_Model_Detail_Basket_inner_shade_001_Detail_Basket_inner_shade_001_col_CollisionShape3D.res" id="3_1g6oj"]
+[ext_resource type="Material" path="res://room_kit/materials/legacy_wicker_honey_strand_0.tres" id="5_hlvve"]
+[ext_resource type="Shape3D" path="res://room_kit/resources/wicker_basket_WickerBasket_Model_Detail_Wicker_honey_strand_0_001_Detail_Wicker_honey_strand_0_001_col_CollisionShape3D.res" id="6_3guh5"]
+[ext_resource type="ArrayMesh" path="res://room_kit/resources/v18_fibre_rattan_07.res" id="7_2mvj0"]
+[ext_resource type="Material" path="res://room_kit/materials/legacy_wicker_honey_strand_1.tres" id="8_h0aw8"]
+[ext_resource type="Shape3D" path="res://room_kit/resources/wicker_basket_WickerBasket_Model_Detail_Wicker_honey_strand_1_001_Detail_Wicker_honey_strand_1_001_col_CollisionShape3D.res" id="9_8uxdw"]
+[ext_resource type="ArrayMesh" path="res://room_kit/resources/v18_fibre_rattan_08.res" id="10_6qnvr"]
+[ext_resource type="Material" path="res://room_kit/materials/legacy_wicker_honey_strand_2.tres" id="11_5nqhp"]
+[ext_resource type="Shape3D" path="res://room_kit/resources/wicker_basket_WickerBasket_Model_Detail_Wicker_honey_strand_2_001_Detail_Wicker_honey_strand_2_001_col_CollisionShape3D.res" id="12_rqfmo"]
+[ext_resource type="ArrayMesh" path="res://room_kit/resources/v18_fibre_rattan_09.res" id="13_1g6oj"]
+[ext_resource type="Material" path="res://room_kit/materials/legacy_wicker_honey_strand_3.tres" id="14_vi4ve"]
+[ext_resource type="Shape3D" path="res://room_kit/resources/wicker_basket_WickerBasket_Model_Detail_Wicker_honey_strand_3_001_Detail_Wicker_honey_strand_3_001_col_CollisionShape3D.res" id="15_6dyn5"]
+[ext_resource type="ArrayMesh" path="res://room_kit/resources/v18_fibre_rattan_10.res" id="16_hp2x4"]
+[ext_resource type="Material" path="res://room_kit/materials/legacy_wicker_honey_strand_4.tres" id="17_81nhf"]
+[ext_resource type="Shape3D" path="res://room_kit/resources/wicker_basket_WickerBasket_Model_Detail_Wicker_honey_strand_4_001_Detail_Wicker_honey_strand_4_001_col_CollisionShape3D.res" id="18_r7k1i"]
+[ext_resource type="ArrayMesh" path="res://room_kit/resources/v18_fibre_rattan_06.res" id="19_3guh5"]
+[ext_resource type="ArrayMesh" path="res://room_kit/resources/v18_fibre_rattan_11.res" id="19_hlvve"]
+[ext_resource type="Material" path="res://room_kit/materials/legacy_wicker_honey_strand_5.tres" id="20_yy8yu"]
+[ext_resource type="Shape3D" path="res://room_kit/resources/wicker_basket_WickerBasket_Model_Detail_Wicker_honey_strand_5_001_Detail_Wicker_honey_strand_5_001_col_CollisionShape3D.res" id="21_rrsna"]
+
+[node name="WickerBasket" type="Node3D" unique_id=197385826]
+
+[node name="Model" type="Node3D" parent="." unique_id=949482929]
+
+[node name="Detail Basket inner shade_001" type="MeshInstance3D" parent="Model" unique_id=793334410]
+mesh = ExtResource("1_2mvj0")
+surface_material_override/0 = ExtResource("2_6qnvr")
+metadata/kit_collision_managed = true
+
+[node name="Detail Basket inner shade_001_col" type="StaticBody3D" parent="Model/Detail Basket inner shade_001" unique_id=587441268]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Model/Detail Basket inner shade_001/Detail Basket inner shade_001_col" unique_id=956011189]
+shape = ExtResource("3_1g6oj")
+
+[node name="Detail Wicker honey strand 0_001" type="MeshInstance3D" parent="Model" unique_id=365460607]
+mesh = ExtResource("19_3guh5")
+surface_material_override/0 = ExtResource("5_hlvve")
+metadata/kit_collision_managed = true
+
+[node name="Detail Wicker honey strand 0_001_col" type="StaticBody3D" parent="Model/Detail Wicker honey strand 0_001" unique_id=1099423535]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Model/Detail Wicker honey strand 0_001/Detail Wicker honey strand 0_001_col" unique_id=1851609851]
+shape = ExtResource("6_3guh5")
+
+[node name="Detail Wicker honey strand 1_001" type="MeshInstance3D" parent="Model" unique_id=1367630216]
+mesh = ExtResource("7_2mvj0")
+surface_material_override/0 = ExtResource("8_h0aw8")
+metadata/kit_collision_managed = true
+
+[node name="Detail Wicker honey strand 1_001_col" type="StaticBody3D" parent="Model/Detail Wicker honey strand 1_001" unique_id=1467923573]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Model/Detail Wicker honey strand 1_001/Detail Wicker honey strand 1_001_col" unique_id=1290139057]
+shape = ExtResource("9_8uxdw")
+
+[node name="Detail Wicker honey strand 2_001" type="MeshInstance3D" parent="Model" unique_id=805819870]
+mesh = ExtResource("10_6qnvr")
+surface_material_override/0 = ExtResource("11_5nqhp")
+metadata/kit_collision_managed = true
+
+[node name="Detail Wicker honey strand 2_001_col" type="StaticBody3D" parent="Model/Detail Wicker honey strand 2_001" unique_id=629253803]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Model/Detail Wicker honey strand 2_001/Detail Wicker honey strand 2_001_col" unique_id=2012808753]
+shape = ExtResource("12_rqfmo")
+
+[node name="Detail Wicker honey strand 3_001" type="MeshInstance3D" parent="Model" unique_id=319421729]
+mesh = ExtResource("13_1g6oj")
+surface_material_override/0 = ExtResource("14_vi4ve")
+metadata/kit_collision_managed = true
+
+[node name="Detail Wicker honey strand 3_001_col" type="StaticBody3D" parent="Model/Detail Wicker honey strand 3_001" unique_id=1456774905]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Model/Detail Wicker honey strand 3_001/Detail Wicker honey strand 3_001_col" unique_id=1204485409]
+shape = ExtResource("15_6dyn5")
+
+[node name="Detail Wicker honey strand 4_001" type="MeshInstance3D" parent="Model" unique_id=861033372]
+mesh = ExtResource("16_hp2x4")
+surface_material_override/0 = ExtResource("17_81nhf")
+metadata/kit_collision_managed = true
+
+[node name="Detail Wicker honey strand 4_001_col" type="StaticBody3D" parent="Model/Detail Wicker honey strand 4_001" unique_id=983513751]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Model/Detail Wicker honey strand 4_001/Detail Wicker honey strand 4_001_col" unique_id=872344472]
+shape = ExtResource("18_r7k1i")
+
+[node name="Detail Wicker honey strand 5_001" type="MeshInstance3D" parent="Model" unique_id=1636059481]
+mesh = ExtResource("19_hlvve")
+surface_material_override/0 = ExtResource("20_yy8yu")
+metadata/kit_collision_managed = true
+
+[node name="Detail Wicker honey strand 5_001_col" type="StaticBody3D" parent="Model/Detail Wicker honey strand 5_001" unique_id=1866778956]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Model/Detail Wicker honey strand 5_001/Detail Wicker honey strand 5_001_col" unique_id=649669660]
+shape = ExtResource("21_rrsna")

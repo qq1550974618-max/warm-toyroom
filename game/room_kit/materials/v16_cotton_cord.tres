@@ -1,0 +1,16 @@
+[gd_resource type="StandardMaterial3D" format=3]
+
+[ext_resource type="Texture2D" path="res://room_kit/textures/v16/cord_fibres_albedo.png" id="1_ewusn"]
+[ext_resource type="Texture2D" path="res://room_kit/textures/v16/cord_fibres_normal.png" id="2_0qg87"]
+[ext_resource type="Texture2D" path="res://room_kit/textures/v16/cord_fibres_roughness.png" id="3_ftb21"]
+
+[resource]
+resource_name = "V16 spun cotton cord"
+albedo_color = Color(0.86, 0.8, 0.68, 1)
+albedo_texture = ExtResource("1_ewusn")
+metallic_specular = 0.12
+roughness_texture = ExtResource("3_ftb21")
+normal_enabled = true
+normal_scale = 0.32
+normal_texture = ExtResource("2_0qg87")
+texture_filter = 5

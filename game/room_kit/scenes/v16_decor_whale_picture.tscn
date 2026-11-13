@@ -1,0 +1,84 @@
+[gd_scene format=3]
+
+[ext_resource type="ArrayMesh" path="res://room_kit/resources/whale_picture_WhalePicture_Model_V5_Collage_chalk_white_001.res" id="1_7g0hc"]
+[ext_resource type="Material" path="res://room_kit/materials/legacy_collage_chalk_white.tres" id="2_bk64v"]
+[ext_resource type="Shape3D" path="res://room_kit/resources/whale_picture_WhalePicture_Model_V5_Collage_chalk_white_001_V5_Collage_chalk_white_001_col_CollisionShape3D.res" id="3_v1x64"]
+[ext_resource type="ArrayMesh" path="res://room_kit/resources/whale_picture_WhalePicture_Model_V5_Collage_golden_paper_001.res" id="4_5q375"]
+[ext_resource type="Material" path="res://room_kit/materials/legacy_collage_golden_paper.tres" id="5_mqtch"]
+[ext_resource type="Shape3D" path="res://room_kit/resources/whale_picture_WhalePicture_Model_V5_Collage_golden_paper_001_V5_Collage_golden_paper_001_col_CollisionShape3D.res" id="6_bpqxv"]
+[ext_resource type="ArrayMesh" path="res://room_kit/resources/whale_picture_WhalePicture_Model_V5_Collage_sea_blue_paper_001.res" id="7_xohed"]
+[ext_resource type="Material" path="res://room_kit/materials/legacy_collage_sea_blue_paper.tres" id="8_wxj45"]
+[ext_resource type="Shape3D" path="res://room_kit/resources/whale_picture_WhalePicture_Model_V5_Collage_sea_blue_paper_001_V5_Collage_sea_blue_paper_001_col_CollisionShape3D.res" id="9_vsy68"]
+[ext_resource type="ArrayMesh" path="res://room_kit/resources/whale_picture_WhalePicture_Model_V5_Drawing_warm_paper_001.res" id="10_7kkms"]
+[ext_resource type="Material" path="res://room_kit/materials/legacy_drawing_warm_paper.tres" id="11_ouhvl"]
+[ext_resource type="Shape3D" path="res://room_kit/resources/whale_picture_WhalePicture_Model_V5_Drawing_warm_paper_001_V5_Drawing_warm_paper_001_col_CollisionShape3D.res" id="12_6mbjs"]
+[ext_resource type="ArrayMesh" path="res://room_kit/resources/whale_picture_WhalePicture_Model_V5_Frame_pale_ash_wood_001.res" id="13_i85vk"]
+[ext_resource type="Material" path="res://room_kit/materials/legacy_frame_pale_ash_wood.tres" id="14_ew5lc"]
+[ext_resource type="Shape3D" path="res://room_kit/resources/whale_picture_WhalePicture_Model_V5_Frame_pale_ash_wood_001_V5_Frame_pale_ash_wood_001_col_CollisionShape3D.res" id="15_hdd47"]
+[ext_resource type="ArrayMesh" path="res://room_kit/resources/v18_fibre_wood_03.res" id="16_usvxn"]
+[ext_resource type="Material" path="res://room_kit/materials/legacy_walnut___open_grain.tres" id="17_58nbv"]
+[ext_resource type="Shape3D" path="res://room_kit/resources/whale_picture_WhalePicture_Model_V5_Walnut___open_grain_001_V5_Walnut___open_grain_001_col_CollisionShape3D.res" id="18_55h2m"]
+
+[node name="WhalePicture" type="Node3D" unique_id=325013368]
+
+[node name="Model" type="Node3D" parent="." unique_id=1992101004]
+
+[node name="V5 Collage chalk white_001" type="MeshInstance3D" parent="Model" unique_id=507364216]
+mesh = ExtResource("1_7g0hc")
+surface_material_override/0 = ExtResource("2_bk64v")
+metadata/kit_collision_managed = true
+
+[node name="V5 Collage chalk white_001_col" type="StaticBody3D" parent="Model/V5 Collage chalk white_001" unique_id=1353228565]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Model/V5 Collage chalk white_001/V5 Collage chalk white_001_col" unique_id=970807344]
+shape = ExtResource("3_v1x64")
+
+[node name="V5 Collage golden paper_001" type="MeshInstance3D" parent="Model" unique_id=853947370]
+mesh = ExtResource("4_5q375")
+surface_material_override/0 = ExtResource("5_mqtch")
+metadata/kit_collision_managed = true
+
+[node name="V5 Collage golden paper_001_col" type="StaticBody3D" parent="Model/V5 Collage golden paper_001" unique_id=1300105122]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Model/V5 Collage golden paper_001/V5 Collage golden paper_001_col" unique_id=914115981]
+shape = ExtResource("6_bpqxv")
+
+[node name="V5 Collage sea blue paper_001" type="MeshInstance3D" parent="Model" unique_id=770882489]
+mesh = ExtResource("7_xohed")
+surface_material_override/0 = ExtResource("8_wxj45")
+metadata/kit_collision_managed = true
+
+[node name="V5 Collage sea blue paper_001_col" type="StaticBody3D" parent="Model/V5 Collage sea blue paper_001" unique_id=974330245]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Model/V5 Collage sea blue paper_001/V5 Collage sea blue paper_001_col" unique_id=1036240620]
+shape = ExtResource("9_vsy68")
+
+[node name="V5 Drawing warm paper_001" type="MeshInstance3D" parent="Model" unique_id=552392143]
+mesh = ExtResource("10_7kkms")
+surface_material_override/0 = ExtResource("11_ouhvl")
+metadata/kit_collision_managed = true
+
+[node name="V5 Drawing warm paper_001_col" type="StaticBody3D" parent="Model/V5 Drawing warm paper_001" unique_id=941192538]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Model/V5 Drawing warm paper_001/V5 Drawing warm paper_001_col" unique_id=1645254115]
+shape = ExtResource("12_6mbjs")
+
+[node name="V5 Frame pale ash wood_001" type="MeshInstance3D" parent="Model" unique_id=1682639193]
+mesh = ExtResource("13_i85vk")
+surface_material_override/0 = ExtResource("14_ew5lc")
+metadata/kit_collision_managed = true
+
+[node name="V5 Frame pale ash wood_001_col" type="StaticBody3D" parent="Model/V5 Frame pale ash wood_001" unique_id=1239496199]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Model/V5 Frame pale ash wood_001/V5 Frame pale ash wood_001_col" unique_id=1092172081]
+shape = ExtResource("15_hdd47")
+
+[node name="V5 Walnut _ open grain_001" type="MeshInstance3D" parent="Model" unique_id=1273937132]
+mesh = ExtResource("16_usvxn")
+surface_material_override/0 = ExtResource("17_58nbv")
+metadata/kit_collision_managed = true
+
+[node name="V5 Walnut _ open grain_001_col" type="StaticBody3D" parent="Model/V5 Walnut _ open grain_001" unique_id=1061664444]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Model/V5 Walnut _ open grain_001/V5 Walnut _ open grain_001_col" unique_id=570314757]
+shape = ExtResource("18_55h2m")

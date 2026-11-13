@@ -1,0 +1,24 @@
+[gd_scene format=3]
+
+[ext_resource type="ArrayMesh" path="res://room_kit/resources/ceiling_tile_240_CeilingTile240_Model_MK_Eggshell_Warm_005.res" id="1_xsx5t"]
+[ext_resource type="Material" path="res://room_kit/materials/mk_eggshell_warm.tres" id="2_xe86b"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_4iktv"]
+size = Vector3(2.4, 0.16, 2.4)
+
+[node name="CeilingTile240" type="Node3D" unique_id=207554156]
+
+[node name="Model" type="Node3D" parent="." unique_id=812591760]
+
+[node name="MK_Eggshell_Warm_005" type="MeshInstance3D" parent="Model" unique_id=1593645504]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.08, 0)
+mesh = ExtResource("1_xsx5t")
+surface_material_override/0 = ExtResource("2_xe86b")
+metadata/kit_collision_managed = true
+
+[node name="Collision" type="StaticBody3D" parent="." unique_id=1374346602]
+collision_mask = 2
+
+[node name="@CollisionShape3D@15" type="CollisionShape3D" parent="Collision" unique_id=2126956048]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.08, 0)
+shape = SubResource("BoxShape3D_4iktv")

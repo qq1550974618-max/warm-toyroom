@@ -1,0 +1,20 @@
+[gd_resource type="StandardMaterial3D" format=3]
+
+[ext_resource type="Texture2D" path="res://room_kit/textures/v18/worked_metal_albedo.png" id="1_pp1xa"]
+[ext_resource type="Texture2D" path="res://room_kit/textures/v18/worked_metal_normal.png" id="2_ewect"]
+[ext_resource type="Texture2D" path="res://room_kit/textures/v18/worked_metal_roughness.png" id="3_06vhx"]
+
+[resource]
+resource_name = "V18 iron_sphere"
+albedo_color = Color(0.48, 0.5, 0.53, 1)
+albedo_texture = ExtResource("1_pp1xa")
+metallic = 0.88
+roughness_texture = ExtResource("3_06vhx")
+normal_enabled = true
+normal_scale = 0.12
+normal_texture = ExtResource("2_ewect")
+anisotropy_enabled = true
+anisotropy = 0.22
+uv1_scale = Vector3(2, 2, 2)
+texture_filter = 5
+metadata/v18_surface_family = "worked_metal"

@@ -1,0 +1,53 @@
+# 暖光玩具房
+
+在微缩玩具房里跑跳、变球、搬运玩具，和鲸鱼女仆同伴一起收集五枚星光。包含铁球与跷跷板、纸飞机、可驾驶的小火车，以及小屋里的台球杆解谜。
+
+**[下载 Windows 单文件试玩版](https://github.com/qq1550974618-max/warm-toyroom/releases/download/v30/WarmToyroom-V30-Windows.exe)** · **[在线试玩](https://v25.dafeiyugame.site/)**
+
+Windows 电脑只需下载上面的一个 `.exe` 文件，双击即可游玩，无需安装 Godot、下载源码或另放资源包。游戏设置会保存到电脑的用户目录。其他设备可以直接打开在线试玩。
+
+下方文件列表是供修改游戏使用的源码，试玩无需逐个下载，也无需点击 Code → Download ZIP。
+
+## 运行桌面版
+
+使用 **Godot 4.8 beta2** 打开 `game/project.godot`，等待资源导入后运行主场景。此工程使用该版本的渲染功能；其他 Godot 版本需要自行验证。桌面版保留原有材质与光照档位，网页调整单独保存在 `web/overlay/`。
+
+## 操作
+
+| 按键 | 操作 |
+| --- | --- |
+| WASD / 鼠标 | 移动 / 转动镜头 |
+| Shift / 空格 | 奔跑 / 跳跃 |
+| Ctrl 或 Q | 地面变球滚动；空中翻滚 |
+| F / 按住鼠标左键 | 拿起或放下 / 蓄力投掷 |
+| E | 互动、推球、机关 |
+| Alt | 切换角色 |
+| N / L | 同伴设置 / 光线与画质 |
+| G / F2 | 投掷轨迹 / 全景 |
+| Esc / F11 | 暂停 / 全屏 |
+
+网页入口可选择电脑或手机操作，画质在游戏内调整。手机建议横屏，左侧摇杆移动，拖动画面转动视角，右侧按钮执行动作。
+
+## 构建网页版
+
+准备 Python 3.10+、Node.js 20+、Godot 4.8 beta2，以及**相同版本的无多线程 Web release 导出模板**。运行：
+
+```sh
+python tools/build_web.py --godot /path/to/godot --template /path/to/web_nothreads_release.zip
+```
+
+构建结果在 `build/browser/site/dist/`。将该目录作为静态网站部署即可。可以运行 `python -m http.server 8000 --directory build/browser/site/dist` 本地预览；请通过 HTTP(S) 打开，不要直接双击 HTML。
+
+网页版使用 WebGL 2 单线程导出，资源以 gzip 分块传输，首载约 **284 MB**。完整下载的资源会保存在浏览器内，下次优先从本机读取；更新版本只下载变更资源。清除网站数据、无痕模式或浏览器回收缓存后可能需要重新下载。每次启动仍需解压资源并准备场景。
+
+提供高、标准、流畅三档画质，最高档按桌面流畅档的功能上限配置；提供当前与 V24.1 两种光照对照。无需在启动前选择低配置模式。
+
+压缩下载大小与解压后的运行内存不同。浏览器需要支持 WebGL 2 和 DecompressionStream；实际手机兼容性受内存与浏览器版本影响。
+
+## 目录
+
+- `game/`：桌面游戏源代码与运行资源。
+- `web/overlay/`：网页专用脚本、字体及导入设置，只覆盖网页构建副本。
+- `web/runtime-files.json`：网页需要的资源清单。
+- `web/tools/`：网页加载、触屏和资源打包工具。
+- `tools/build_web.py`：可移植构建入口。

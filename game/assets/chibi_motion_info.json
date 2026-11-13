@@ -1,0 +1,91 @@
+{
+  "clips": [
+    {
+      "name": "wait",
+      "seconds": 4,
+      "loop": true,
+      "frames": 161
+    },
+    {
+      "name": "walk",
+      "seconds": 0.9,
+      "loop": true,
+      "frames": 37
+    },
+    {
+      "name": "run",
+      "seconds": 0.64,
+      "loop": true,
+      "frames": 27
+    },
+    {
+      "name": "run_neutral",
+      "seconds": 0.7,
+      "loop": true,
+      "frames": 29
+    },
+    {
+      "name": "jump",
+      "seconds": 0.9,
+      "loop": false,
+      "frames": 37
+    },
+    {
+      "name": "fall_air",
+      "seconds": 2.5,
+      "loop": true,
+      "frames": 101
+    },
+    {
+      "name": "land",
+      "seconds": 0.36,
+      "loop": false,
+      "frames": 16
+    },
+    {
+      "name": "cast",
+      "seconds": 0.7,
+      "loop": false,
+      "frames": 29
+    },
+    {
+      "name": "hurt",
+      "seconds": 0.38,
+      "loop": false,
+      "frames": 17
+    },
+    {
+      "name": "victory",
+      "seconds": 1.4,
+      "loop": false,
+      "frames": 57
+    },
+    {
+      "name": "fall",
+      "seconds": 1.6,
+      "loop": false,
+      "frames": 65
+    },
+    {
+      "name": "pistol_idle",
+      "seconds": 1.5,
+      "loop": true,
+      "frames": 61
+    },
+    {
+      "name": "pistol_shoot",
+      "seconds": 0.55,
+      "loop": false,
+      "frames": 23
+    },
+    {
+      "name": "pistol_reload",
+      "seconds": 1.5,
+      "loop": false,
+      "frames": 61
+    }
+  ],
+  "run_reference_speed": 0.7630813953488372,
+  "walk_reference_speed": 0.19713261648745517,
+  "authored_from_new_bind_rest": true
+}

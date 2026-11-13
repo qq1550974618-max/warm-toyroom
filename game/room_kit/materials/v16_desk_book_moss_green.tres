@@ -1,0 +1,21 @@
+[gd_resource type="StandardMaterial3D" format=3]
+
+[ext_resource type="Texture2D" path="res://room_kit/textures/v16/flag_cotton_albedo.png" id="1_mwjyy"]
+[ext_resource type="Texture2D" path="res://room_kit/textures/v16/flag_cotton_normal.png" id="2_a5043"]
+[ext_resource type="Texture2D" path="res://room_kit/textures/v16/flag_cotton_roughness.png" id="3_b68rq"]
+
+[resource]
+resource_name = "V16 Desk woven cover moss_green"
+albedo_color = Color(0.30353206, 0.43662706, 0.36556464, 1)
+albedo_texture = ExtResource("1_mwjyy")
+metallic_specular = 0.23
+roughness_texture = ExtResource("3_b68rq")
+normal_enabled = true
+normal_scale = 0.48
+normal_texture = ExtResource("2_a5043")
+clearcoat = 0.1
+clearcoat_roughness = 0.32
+uv1_scale = Vector3(2.2, 2.2, 2.2)
+uv1_triplanar = true
+uv1_world_triplanar = true
+texture_filter = 5

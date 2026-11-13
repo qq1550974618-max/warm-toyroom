@@ -1,0 +1,23 @@
+[gd_resource type="ShaderMaterial" format=3]
+
+[ext_resource type="Shader" path="res://toy_finish.gdshader" id="1_lipn7"]
+
+[resource]
+resource_name = "V15_GreenPaint"
+render_priority = 0
+shader = ExtResource("1_lipn7")
+shader_parameter/tint = Color(0.3574912, 0.5220287, 0.49010885, 1)
+shader_parameter/has_base = false
+shader_parameter/has_bump = false
+shader_parameter/has_rough = false
+shader_parameter/roughness_min = 0.41
+shader_parameter/roughness_span = 0.13
+shader_parameter/normal_strength = 0.035
+shader_parameter/specular_amount = 0.31
+shader_parameter/metallic_amount = 0.0
+shader_parameter/coat_amount = 0.06
+shader_parameter/coat_roughness = null
+shader_parameter/fiber_amount = 0.0
+shader_parameter/grain_amount = 0.025
+shader_parameter/gilt_amount = 0.0
+shader_parameter/micro_scale = null

@@ -1,0 +1,14 @@
+[gd_resource type="StandardMaterial3D" format=3]
+
+[ext_resource type="Texture2D" path="res://assets/toy_room_v5_wood_table_worn_nor_gl.jpg" id="1_io0ma"]
+
+[resource]
+resource_name = "V20 Ultra Frame pale ash wood"
+albedo_color = Color(0.6799757, 0.5703231, 0.41687012, 1)
+roughness = 0.46
+normal_enabled = true
+normal_scale = 0.2
+normal_texture = ExtResource("1_io0ma")
+texture_filter = 5
+metadata/v18_surface_family = "split_rattan"
+metadata/quality_profile = "ultra"

@@ -1,0 +1,17 @@
+[gd_resource type="StandardMaterial3D" format=3]
+
+[ext_resource type="Texture2D" path="res://room_kit/quality/v20/textures/rubber_albedo.png" id="1_1bn8y"]
+[ext_resource type="Texture2D" path="res://room_kit/quality/v20/textures/rubber_normal.png" id="2_gfrky"]
+[ext_resource type="Texture2D" path="res://room_kit/quality/v20/textures/rubber_roughness.png" id="3_1n7qk"]
+
+[resource]
+resource_name = "V20 Ultra V16 rubber eraser"
+albedo_color = Color(0.55, 0.21, 0.14, 1)
+albedo_texture = ExtResource("1_1bn8y")
+metallic_specular = 0.1
+roughness_texture = ExtResource("3_1n7qk")
+normal_enabled = true
+normal_scale = 0.35
+normal_texture = ExtResource("2_gfrky")
+texture_filter = 5
+metadata/quality_profile = "ultra"

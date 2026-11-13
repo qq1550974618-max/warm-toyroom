@@ -1,0 +1,20 @@
+[gd_resource type="StandardMaterial3D" format=3]
+
+[ext_resource type="Texture2D" path="res://room_kit/textures/v18/worked_metal_albedo.png" id="1_x5k8p"]
+[ext_resource type="Texture2D" path="res://room_kit/textures/v18/worked_metal_normal.png" id="2_soeo8"]
+[ext_resource type="Texture2D" path="res://room_kit/textures/v18/worked_metal_roughness.png" id="3_mgyry"]
+
+[resource]
+resource_name = "V18 Blackened iron"
+albedo_color = Color(0.25278953, 0.22935726, 0.19966345, 1)
+albedo_texture = ExtResource("1_x5k8p")
+metallic = 0.65
+roughness = 0.95
+roughness_texture = ExtResource("3_mgyry")
+normal_enabled = true
+normal_scale = 0.12
+normal_texture = ExtResource("2_soeo8")
+anisotropy_enabled = true
+anisotropy = 0.22
+texture_filter = 5
+metadata/v18_surface_family = "worked_metal"

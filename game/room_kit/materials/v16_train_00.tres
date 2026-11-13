@@ -1,0 +1,23 @@
+[gd_resource type="ShaderMaterial" format=3]
+
+[ext_resource type="Shader" path="res://toy_finish.gdshader" id="1_5xqrd"]
+
+[resource]
+resource_name = "V15_BearingSteel"
+render_priority = 0
+shader = ExtResource("1_5xqrd")
+shader_parameter/tint = Color(0.60124344, 0.6262097, 0.6342527, 1)
+shader_parameter/has_base = false
+shader_parameter/has_bump = false
+shader_parameter/has_rough = false
+shader_parameter/roughness_min = 0.3
+shader_parameter/roughness_span = 0.14
+shader_parameter/normal_strength = 0.025
+shader_parameter/specular_amount = 0.48
+shader_parameter/metallic_amount = 0.78
+shader_parameter/coat_amount = 0.0
+shader_parameter/coat_roughness = null
+shader_parameter/fiber_amount = 0.0
+shader_parameter/grain_amount = 0.018
+shader_parameter/gilt_amount = 0.0
+shader_parameter/micro_scale = null
