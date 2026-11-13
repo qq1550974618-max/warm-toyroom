@@ -49,7 +49,7 @@ vram_texture_compression/for_desktop=true
 vram_texture_compression/for_mobile=true
 html/canvas_resize_policy=0
 html/focus_canvas_on_start=true
-html/export_icon=false
+html/export_icon=true
 progressive_web_app/enabled=false
 '''.replace('TEMPLATE', json.dumps(template.as_posix()))
     (output/'game/export_presets.cfg').write_text(preset, encoding='utf-8')

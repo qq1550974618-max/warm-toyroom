@@ -51,6 +51,8 @@ var web_touch_mode := false
 var web_touch_paused := false
 var web_touch_window: JavaScriptObject
 var web_touch_callback: JavaScriptObject
+var web_touch_sprinting := false
+var web_layout_active := false
 const WEB_TOUCH_DEVICE := 40
 const WEB_TOUCH_KEYS := {
 	"jump": KEY_SPACE,
@@ -280,6 +282,7 @@ func _probe_lit_thin_details(source:LightmapGIData) -> LightmapGIData:
 
 func _build_camera() -> void:
 	camera=Camera3D.new();camera.physics_interpolation_mode=Node.PHYSICS_INTERPOLATION_MODE_OFF;camera.name="ToyHeightCamera";camera.fov=38;camera.near=.025;camera.far=60;add_child(camera)
+	camera.keep_aspect=Camera3D.KEEP_HEIGHT
 	attributes=CameraAttributesPractical.new();attributes.dof_blur_far_enabled=false;attributes.dof_blur_far_distance=5.4;attributes.dof_blur_far_transition=3.8;attributes.dof_blur_amount=.09
 	attributes.dof_blur_near_enabled=false;attributes.dof_blur_near_distance=1.7;attributes.dof_blur_near_transition=1.0
 	camera.attributes=attributes;camera.current=true
@@ -343,6 +346,7 @@ func _build_ui() -> void:
 	objective=_label(ui,Vector2(38,65),"",16,font)
 	hint=_label(ui,Vector2(38,843),"Shift 快跑   空格 跳跃   按住 Ctrl / Q 滚动，松开滑停   F 拿起/放下   左键蓄力投掷   G 轨迹   E 扶住/松开铁球",16,font)
 	var extra=_label(ui,Vector2(38,871),"Alt 换人   F2 全景   L 光线调节   F11 全屏   Tab 界面   R 复位   M 声音   Esc 暂停 / 释放鼠标",13,font);extra.modulate=Color(.82,.77,.65)
+	if web_touch_mode:hint.hide();extra.hide()
 	toast=_label(ui,Vector2(460,790),"",19,font);toast.size=Vector2(700,40);toast.horizontal_alignment=HORIZONTAL_ALIGNMENT_CENTER
 	diagnostics=_label(ui,Vector2(1160,25),"",14,font);diagnostics.visible=false
 
@@ -456,6 +460,11 @@ func _update_camera(delta: float) -> void:
 			attributes.dof_blur_near_distance=focus_distance-3.0;attributes.dof_blur_near_transition=2.0
 
 func _unhandled_input(event: InputEvent) -> void:
+	if web_layout_active:return
+	# Touch look is sent by the HTML pointer bridge. Ignore its emulated mouse
+	# click during play so dragging the camera cannot also start a throw.
+	if web_touch_mode and not paused and event is InputEventMouseButton and event.device!=WEB_TOUCH_DEVICE:
+		get_viewport().set_input_as_handled();return
 	if OS.has_feature("web") and not web_touch_mode and not paused and ready_to_play and Input.mouse_mode!=Input.MOUSE_MODE_CAPTURED:
 		if event is InputEventMouseButton and event.pressed and event.button_index==MOUSE_BUTTON_LEFT:
 			Input.mouse_mode=Input.MOUSE_MODE_CAPTURED;mouse_look_enabled=true;get_viewport().set_input_as_handled();return
@@ -585,6 +594,10 @@ func _set_touch_axis(action: StringName, strength: float) -> void:
 
 
 func _set_touch_movement(direction: Vector2) -> void:
+	var magnitude:=direction.length()
+	# Hysteresis avoids alternating walk/run at the edge of the thumb's reach.
+	web_touch_sprinting=magnitude>.48 if web_touch_sprinting else magnitude>=.58
+	_set_touch_axis("sprint",1.0 if web_touch_sprinting else 0.0)
 	_set_touch_axis("move_left", maxf(-direction.x, 0.0))
 	_set_touch_axis("move_right", maxf(direction.x, 0.0))
 	_set_touch_axis("move_forward", maxf(-direction.y, 0.0))
@@ -595,6 +608,10 @@ func _receive_web_touch(args: Array) -> void:
 	if args.is_empty() or not ready_to_play:
 		return
 	match str(args[0]):
+		"layout":
+			if args.size()==2:_web_layout_edit(bool(args[1]))
+		"context":
+			if not paused:_web_context_action.call_deferred()
 		"reset":
 			_set_touch_movement(Vector2.ZERO)
 			for action in ["jump", "sprint", "roll"]:
@@ -623,3 +640,26 @@ func _receive_web_touch(args: Array) -> void:
 				button.pressed = bool(args[1])
 				Input.parse_input_event(button)
 
+func _web_layout_edit(enabled:bool) -> void:
+	if enabled:
+		if paused or web_layout_active:return
+		pause_menu.show_pause()
+		pause_menu.overlay.hide()
+		web_layout_active=true
+	elif web_layout_active:
+		# Resume through the same owner that captured all child process modes.
+		web_layout_active=false
+		pause_menu.overlay.show()
+		pause_menu.resume()
+
+func _web_context_action() -> void:
+	if paused or not ready_to_play:return
+	var event:=InputEventKey.new();event.physical_keycode=KEY_E;event.pressed=true
+	# Keep normal E priorities for attached mechanisms, doors and the train.
+	# Only fall back to pickup/drop when no nearby mechanism consumes the tap.
+	for target in [puzzles,train,mouse_house.door if mouse_house!=null else null,playground,iron_ball]:
+		if target!=null and target.handle_input(event):return
+	if prop_interaction.held!=null:
+		if prop_interaction.phase=="hold":prop_interaction.drop()
+	elif prop_interaction.phase=="idle" and prop_interaction.try_pickup():return
+	else:_interact()

@@ -129,7 +129,7 @@ func _physics_process(_delta:float) -> void:
 		else:placement_tip.text="这里空间不足，请选择宽一些的站立面 · Esc 取消"
 
 func _process(_delta:float) -> void:
-	open_button.visible=not choosing and not room.light_controls.panel.visible
+	open_button.visible=not room.web_touch_mode and not choosing and not room.light_controls.panel.visible
 
 func handle_key(event:InputEvent) -> bool:
 	if event is InputEventKey and event.pressed and not event.echo:

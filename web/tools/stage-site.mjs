@@ -13,7 +13,7 @@ const dist = process.env.TOYROOM_STAGE_DIST ? resolve(process.env.TOYROOM_STAGE_
 const payload = join(dist, "payload");
 await mkdir(payload, { recursive: true });
 const packSource = process.argv[2] ? resolve(process.argv[2]) : join(build, "index.pck");
-const chunkLimit = 16 * 1024 * 1024;
+const chunkLimit = 4 * 1024 * 1024;
 
 async function stage(file, path, type) {
   const compressed = join(build, `${file}.gz`);
@@ -48,14 +48,58 @@ for (const name of await readdir(payload)) {
 for (const name of await readdir(build)) {
   if (/^index\.audio\..*worklet\.js$/.test(name)) await copyFile(join(build, name), join(dist, name));
 }
-const engine = await readFile(join(build, "index.js"), "utf8");
+let engine = await readFile(join(build, "index.js"), "utf8");
 const loader = "return fetch(file).then(function (response)";
 if (!engine.includes(loader)) throw new Error("Godot loader changed");
-await writeFile(join(dist, "index.js"), engine.replace(loader, "return (globalThis.toyroomAssetFetch || fetch)(file).then(function (response)"));
+engine = engine.replace(loader, "return (globalThis.toyroomAssetFetch || fetch)(file).then(function (response)");
+// The stock recursive tracker neither propagates reader errors nor respects
+// backpressure. A failed network stream could leave startGame pending forever.
+const trackerStart = engine.indexOf("\tfunction getTrackedResponse(response, load_status) {");
+const trackerEnd = engine.indexOf("\n\tfunction loadFetch(", trackerStart);
+if (trackerStart < 0 || trackerEnd < 0 || !engine.includes("return tr.arrayBuffer();")) throw new Error("Godot preloader changed");
+engine = engine.slice(0, trackerStart) + `
+  function getTrackedResponse(response, load_status) {
+    const reader = response.body.getReader();
+    return new Response(new ReadableStream({
+      async pull(controller) {
+        try {
+          const result = await reader.read();
+          if (result.done) { load_status.done = true; controller.close(); }
+          else { load_status.loaded += result.value.length; controller.enqueue(result.value); }
+        } catch (error) { load_status.done = true; controller.error(error); }
+      },
+      cancel(reason) { return reader.cancel(reason); }
+    }), { headers: response.headers });
+  }
+` + engine.slice(trackerEnd);
+engine = engine.replace("return tr.arrayBuffer();", "return globalThis.toyroomReadBuffer ? globalThis.toyroomReadBuffer(tr, fileSize) : tr.arrayBuffer();");
+await writeFile(join(dist, "index.js"), engine);
 await writeFile(join(dist, "payload.js"), `globalThis.TOYROOM_PAYLOAD = ${JSON.stringify(resources)};\n`);
 await copyFile(join(tools, "web-shell.html"), join(dist, "index.html"));
 await copyFile(join(tools, "shell.css"), join(dist, "shell.css"));
 await copyFile(join(tools, "boot.js"), join(dist, "boot.js"));
 await copyFile(join(tools, "touch.js"), join(dist, "touch.js"));
+for (const name of ["asset-loader.js", "touch.css"]) await copyFile(join(tools, name), join(dist, name));
+await mkdir(join(dist, "vendor"), { recursive: true });
+for (const name of ["fflate-0.8.2.js", "fflate-LICENSE.txt"]) await copyFile(join(tools, "vendor", name), join(dist, "vendor", name));
+for (const size of [180,192,512]) await copyFile(join(tools, `icon-${size}.png`), join(dist, `icon-${size}.png`));
+await writeFile(join(dist, "manifest.webmanifest"), JSON.stringify({ name: "暖光玩具房", short_name: "玩具房", lang: "zh-CN", start_url: "./", scope: "./", display: "fullscreen", display_override: ["fullscreen", "standalone"], orientation: "landscape", background_color: "#1a120f", theme_color: "#1a120f", icons: [192,512].map(size => ({ src: `icon-${size}.png`, sizes: `${size}x${size}`, type: "image/png", purpose: "any" })) }));
+const shellFiles = ["index.html", "index.js", "payload.js", "boot.js", "asset-loader.js", "touch.js", "shell.css", "touch.css", "vendor/fflate-0.8.2.js", "manifest.webmanifest", "icon-180.png", "icon-192.png", "icon-512.png"];
+const shellHash = createHash("sha256");
+for (const name of shellFiles) shellHash.update(await readFile(join(dist, name)));
+await writeFile(join(dist, "sw.js"), `
+const NAME = "toyroom-shell-${shellHash.digest("hex").slice(0, 12)}";
+const FILES = ${JSON.stringify(shellFiles)};
+self.addEventListener("install", event => event.waitUntil(caches.open(NAME).then(c => c.addAll(FILES)).then(() => self.skipWaiting())));
+self.addEventListener("activate", event => event.waitUntil(caches.keys().then(keys => Promise.all(keys.filter(k => k.startsWith("toyroom-shell-") && k !== NAME).map(k => caches.delete(k)))).then(() => self.clients.claim())));
+self.addEventListener("fetch", event => {
+  const url = new URL(event.request.url);
+  if (event.request.method !== "GET" || url.origin !== location.origin || url.pathname.includes("/payload/")) return;
+  const relative = url.pathname.slice(new URL(self.registration.scope).pathname.length);
+  if (event.request.mode !== "navigate" && !FILES.includes(relative)) return;
+  // Online visits always get the published version. Offline can reuse this shell.
+  event.respondWith(fetch(event.request).catch(() => caches.open(NAME).then(c => c.match(event.request.mode === "navigate" ? "index.html" : relative)).then(r => r || Response.error())));
+});
+`);
 await copyFile(join(tools, "NotoSansSC-OFL.txt"), join(dist, "font-license.txt"));
 console.log(JSON.stringify(Object.fromEntries(Object.entries(resources).map(([file, { bytes, originalBytes, parts }]) => [file, { bytes, originalBytes, chunks: parts.length }]))));

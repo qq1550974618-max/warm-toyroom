@@ -53,6 +53,7 @@ func _ready() -> void:
 	soft_lighting.bind(room)
 	_build_panel()
 	if room.web_touch_mode:preload("res://web/mobile_ui.gd").fit_panel(panel)
+	if room.web_touch_mode:open_button.hide()
 	if not room.automated:load_preferences()
 	set_quality(quality_index);_sync_widgets();apply_values()
 
@@ -75,7 +76,7 @@ func _build_panel() -> void:
 	panel.offset_left=-650;panel.offset_right=-38;panel.offset_top=126;panel.offset_bottom=1236;panel.add_theme_stylebox_override("panel",_style(Color(.055,.072,.067,.97),Color(.46,.43,.33,.9)))
 	panel.theme=theme
 	var outer:=VBoxContainer.new();outer.add_theme_constant_override("separation",12);panel.add_child(outer)
-	
+
 	var scroll:=ScrollContainer.new();scroll.name="光影对比";scroll.horizontal_scroll_mode=ScrollContainer.SCROLL_MODE_DISABLED;scroll.size_flags_vertical=Control.SIZE_EXPAND_FILL;outer.add_child(scroll)
 	var rows:=VBoxContainer.new();rows.add_theme_constant_override("separation",12);rows.size_flags_horizontal=Control.SIZE_EXPAND_FILL;scroll.add_child(rows)
 	var heading:=Label.new();heading.text="窗边的光";heading.add_theme_font_size_override("font_size",34);heading.modulate=Color(1,.88,.64);rows.add_child(heading)
