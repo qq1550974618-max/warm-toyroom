@@ -159,6 +159,10 @@ func apply_render_quality() -> void:
 	var shadow_size=2048
 	get_viewport().msaa_3d=Viewport.MSAA_DISABLED
 	RenderingServer.directional_shadow_atlas_set_size(shadow_size,false)
+	# Mobile's engine default is hard nearest filtering. Explicitly filter the
+	# same shadow map so phone/browser feature overrides cannot restore stair steps.
+	var filtering=RenderingServer.SHADOW_QUALITY_SOFT_LOW if quality_index==2 else RenderingServer.SHADOW_QUALITY_SOFT_MEDIUM
+	RenderingServer.directional_soft_shadow_filter_set_quality(filtering)
 	get_viewport().positional_shadow_atlas_size=1024
 	if OS.has_feature("web"):JavaScriptBridge.eval("window.setToyroomRenderHeight?.(%d)"%heights[quality_index])
 	effective_quality={"id":QUALITY_IDS[quality_index],"shadow_size":shadow_size,"height":heights[quality_index]}
@@ -170,7 +174,11 @@ func _enforce_browser_features() -> void:
 	e.reflected_light_source=Environment.REFLECTION_SOURCE_SKY
 	room.attributes.dof_blur_far_enabled=false;room.attributes.dof_blur_near_enabled=false
 	room.sun.shadow_bias=.20;room.sun.shadow_normal_bias=2.0;room.sun.directional_shadow_max_distance=23
-	room.sun.directional_shadow_mode=DirectionalLight3D.SHADOW_PARALLEL_2_SPLITS
+	# Share precision over the playable depth; the old first split covered mostly
+	# empty space in front of the overview camera and left books in the coarse tail.
+	room.sun.directional_shadow_mode=DirectionalLight3D.SHADOW_PARALLEL_4_SPLITS
+	room.sun.directional_shadow_split_1=.10;room.sun.directional_shadow_split_2=.28;room.sun.directional_shadow_split_3=.55
+	room.sun.directional_shadow_blend_splits=true
 	room.get_node("RoomReflections").hide();room.gi.hide()
 	for lamp in room.get_children():
 		if lamp is Light3D and lamp!=room.sun:lamp.shadow_enabled=false

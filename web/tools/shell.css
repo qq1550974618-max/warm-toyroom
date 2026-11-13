@@ -68,6 +68,8 @@ button.secondary { background: transparent; color: #ffe2b9; border-color: #ad896
 button:focus-visible { outline: .18rem solid #ffedc8; outline-offset: .2rem; }
 progress { width: 100%; height: .65rem; accent-color: #f2c68b; }
 #status { min-height: 1.65em; font-size: .89rem; margin: .8rem 0; }
+#load-details { color:#e5c8a8; font-size:.8rem; }
+#load-error { white-space:pre-wrap; overflow-wrap:anywhere; max-height:9rem; overflow:auto; font-size:.7rem; user-select:text; }
 .controls { border-top: 1px solid #795e49; margin: 1.3rem 0 0; padding-top: .9rem; font-size: .83rem; }
 kbd { display: inline-block; color: #ffebcb; margin-left: .35em; font-family: inherit; font-weight: 700; }
 kbd:first-child { margin-left: 0; }

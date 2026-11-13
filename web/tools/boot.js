@@ -3,9 +3,14 @@
   const canvas = $("#game"), intro = $("#intro"), status = $("#status"), progress = $("#progress");
   const actions = $(".actions"), play = $("#play"), mobile = $("#mobile"), look = $("#look");
   const fullscreen = $("#fullscreen"), screenNotice = $("#screen-notice");
+  const errorDetails = $('#load-details'), errorText = $('#load-error');
   const resources = globalThis.TOYROOM_PAYLOAD;
   let ready = false, starting = false, hasLocked = false, failed = false, mobileMode = false, renderHeight = 720;
   let resizeFrame, noticeTimer, lastProgress = 0;
+  let startupStage = 'download';
+  const stageNames = {download:'下载资源',retry:'重试资源',decode:'解压资源',compile:'准备游戏引擎',storage:'读取游戏设置',mount:'装载游戏资源',scene:'准备房间'};
+  const diagnostics = {events:[],engineErrors:[]};
+  const record = event => {diagnostics.events.push({time:Math.round(performance.now()),...event});if(diagnostics.events.length>16)diagnostics.events.shift();};
   const mib = bytes => (bytes / 1048576).toFixed(1);
   const standalone = () => !!navigator.standalone || window.matchMedia?.("(display-mode: standalone)").matches;
   const fullscreenElement = () => document.fullscreenElement || document.webkitFullscreenElement;
@@ -68,11 +73,18 @@
   function showError(error) {
     if (failed) return;
     failed = true; console.error(error); progress.hidden = true;
+    assets.cancel();
     const message = String(error?.message || error);
-    const memory = /memory|allocation|out of bounds|Array buffer|RangeError/i.test(message);
+    // A wasm out-of-bounds trap or arbitrary RangeError is not evidence that
+    // the user's device has insufficient RAM. Preserve the real failure.
+    const memory = /out of memory|not enough memory|allocation failed|failed to allocate|array buffer allocation failed/i.test(message);
     status.textContent = memory
-      ? "浏览器可用内存不足，游戏未能启动。请关闭其他游戏标签页后重试；下载完成的部分会保留。"
-      : `加载未完成：${message.slice(0, 160)}。重试会继续使用已保存的资源。`;
+      ? "游戏启动时申请内存失败。可关闭其他游戏标签页后重试，已缓存资源会继续使用。"
+      : `${stageNames[error?.toyroomStage || startupStage] || '启动'}未完成：${message.slice(0, 110)}。重试会使用已缓存资源。`;
+    errorDetails.hidden=false;
+    errorText.textContent=JSON.stringify({stage:error?.toyroomStage || startupStage,name:error?.name,message,
+      resource:error?.toyroomPart || null,transport:assets.stats,events:diagnostics.events,
+      engine:diagnostics.engineErrors,browser:navigator.userAgent},null,2);
     play.textContent = "重试载入"; play.onclick = () => location.reload();
     mobile.hidden = true; actions.hidden = false;
   }
@@ -82,9 +94,26 @@
     if (Date.now() - lastProgress < 100 && loaded < total) return;
     lastProgress = Date.now();
     status.textContent = loaded >= total ? "下载完成，正在解压并准备房间…"
-      : `${cached ? "正在读取本机游戏" : "正在下载并保存游戏"} · ${mib(loaded)} / ${mib(total)} MiB`;
+      : `${cached ? "读取已缓存资源" : "下载游戏资源"} · ${mib(loaded)} / ${mib(total)} MiB`;
+    startupStage=loaded>=total?'decode':'download';
   });
   window.toyroomAssetFetch = file => assets.response(file);
+  window.toyroomFatal = showError;
+  window.toyroomStartup = event => {
+    if (ready || failed) return;
+    startupStage=event.phase;
+    if (event.phase==='decode') {
+      if (assets.loaded.size && [...assets.loaded.values()].reduce((a,b)=>a+b,0) < assets.total) return;
+      status.textContent=`解压游戏资源 · ${Math.min(100,Math.round(event.bytes/event.total*100))}%`;
+    } else {
+      record(event);
+      const suffix=event.phase==='retry'?' · 已保存的部分无需重下':'';
+      status.textContent=`${stageNames[event.phase] || '准备游戏'}…${suffix}`;
+    }
+  };
+  window.addEventListener('unhandledrejection', event => {
+    if (starting && !ready && !failed) showError(event.reason);
+  });
   function setReady() {
     if (ready || failed) return;
     ready = true; resize(); intro.hidden = true; look.hidden = hasLocked || mobileMode;
@@ -106,9 +135,20 @@
       canvasResizePolicy: 0, focusCanvas: true, args,
       fileSizes: Object.fromEntries(Object.entries(resources).map(([file, a]) => [file, a.originalBytes])),
       onPrint(message) { console.info(message); if (message.startsWith("ROOM_READY")) setTimeout(setReady, 0); },
-      onPrintError(message) { console.error(message); },
+      onPrintError(message) { console.error(message);diagnostics.engineErrors.push(String(message));if(diagnostics.engineErrors.length>6)diagnostics.engineErrors.shift(); },
     });
-    try { await engine.startGame(); } catch (error) { showError(error); }
+    try {
+      // Initialize the small engine first: don't hold the 407 MiB pack while
+      // compiling wasm or while waiting for browser storage permissions.
+      await engine.init('index');
+      if(failed)return;
+      window.toyroomStartup({phase:'download'});
+      await engine.preloadFile('index.pck','index.pck');
+      if(failed)return;
+      status.textContent='资源已就绪，正在进入房间…';
+      await new Promise(resolve=>requestAnimationFrame(()=>setTimeout(resolve,0)));
+      await engine.start({args:['--main-pack','index.pck',...args]});
+    } catch (error) { showError(error); }
   }
   canvas.addEventListener("webglcontextlost", event => {
     event.preventDefault();
